@@ -23,4 +23,4 @@ Project Structure
 
 Clone the repository:
 
-git clone https://github.com/e1raa/FairView.git
+git clone https://github.com/s00va/FairView.git
