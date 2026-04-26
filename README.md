@@ -24,3 +24,7 @@ Project Structure
 Clone the repository:
 
 git clone https://github.com/s00va/FairView.git
+
+# TODO
+To run:
+uv run ./main.py
