@@ -1,9 +1,11 @@
 from flask import Flask, render_template, session
 from datetime import timedelta
 from blueprints.database import db, Base
+from blueprints.account import accountBP
 
 
 app = Flask(__name__)
+app.register_blueprint(accountBP, url_prefix="")
 app.config |= {
     "SQLALCHEMY_ENGINES": {
         "default": "sqlite:///default.sqlite",
