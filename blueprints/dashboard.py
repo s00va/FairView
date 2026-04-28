@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, redirect, request, session
-from blueprints.database import db, User, Role
+from blueprints.database import db, User, Conference, Role, JoinedConference
 from blueprints.account import redirectToLoginIfNotLoggedIn, getUserRole
+from blueprints.conferences import getJoinedConferences
 from sqlalchemy import select
 from functools import wraps
 
@@ -10,16 +11,77 @@ dashboardBP = Blueprint(
 
 
 @dashboardBP.route("/dashboard", methods=["GET"])
-@dashboardBP.route("/", methods=["GET"])
 @redirectToLoginIfNotLoggedIn
 def dashboard():
     # Get user role
     role = getUserRole()
     match role:
         case Role.SPEARKER:
-            return render_template("display_pages/dashboard_speaker.html")
+            speakerCards = [
+                dashboardCard(
+                    "createTalkTemp",
+                    "static/img/dashboard/new_talk_icon.png",
+                    "Create New Talk",
+                    "Submit a new talk to a conference",
+                ),
+                dashboardCard(
+                    "talks",
+                    "static/img/dashboard/view_talks_icon.png",
+                    "Manage Talks",
+                    "View and manage your existing talks",
+                ),
+                dashboardCard(
+                    "conferences",
+                    "static/img/dashboard/join_conference_icon.png",
+                    "Join Conference",
+                    "Discover and join new conferences",
+                ),
+            ]
+            return render_template(
+                "display_pages/dashboard_speaker.html",
+                conferenceTable_data=getJoinedConferences(),
+                dashboardCards=speakerCards,
+            )
         case Role.REVIEWIER:
-            return render_template("display_pages/dashboard_reviewer.html")
+            reviewerCards = [
+                dashboardCard(
+                    "reviews",
+                    "static/img/dashboard/view_talks_icon.png",
+                    "Manage Reviews",
+                    "View and manage your existing reviews",
+                ),
+                dashboardCard(
+                    "conferences",
+                    "static/img/dashboard/join_conference_icon.png",
+                    "Join Conference",
+                    "Discover and join new conferences",
+                ),
+            ]
+            return render_template(
+                "display_pages/dashboard_speaker.html",
+                conferenceTable_data=getJoinedConferences(),
+                dashboardCards=reviewerCards,
+            )
         case Role.CONFERENCE_MANAGER:
-            return render_template("display_pages/dashboard_conference_manager.html")
+            conferenceManagerCards = [
+                dashboardCard(
+                    "createConferenceTemp",
+                    "static/img/dashboard/new_talk_icon.png",
+                    "Create New Conference",
+                    "Create a new conference",
+                )
+            ]
+            return render_template(
+                "display_pages/dashboard_speaker.html",
+                conferenceTable_data=getJoinedConferences(),
+                dashboardCards=conferenceManagerCards,
+            )
     return render_template("display_pages/error.html")
+
+
+class dashboardCard:
+    def __init__(self, linkIn, imgIn, titleIn, descriptionIn):
+        self.link = linkIn
+        self.img = imgIn
+        self.title = titleIn
+        self.description = descriptionIn

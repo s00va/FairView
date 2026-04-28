@@ -8,26 +8,11 @@
 
 {% include 'subpages/navbar_speaker.html' %}
 
-<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="w-100" style="max-width: 800px;">
-        <div class="card p-4 shadow">
-            <h1 class="display-2">F@irview</h1>
-            <h2 class="display-5">Log In</h2>
-            <div id="feedback_container" class="mt-2"></div>
-            <form method="POST" action="/login" hx-post="/login" hx-target="#feedback_container">
-                <div class="mb-3">
-                    <label for="email_input" class="form-label">Email</label>
-                    <input type="text" name="email_input" class="form-control" id="email_input">
-                </div>
-                <div class="mb-3">
-                    <label for="password_input" class="form-label">Password</label>
-                    <input type="password" name="password_input" class="form-control" id="password_input">
-                </div>
-
-                <button type="submit" class="btn btn-primary">Log In</button>
-            </form>
-            <p class="mt-4 mb-0"><a href="/sign-up">Don't have an account? Sign up now!</a></p>
-        </div>
-    </div>
+<div class="container py-5">
+    {% include 'subpages/dashboard_cards.html' %}
+    {% include 'subpages/table_conferences.html' %}
 </div>
+
+
+
 {% endblock %}

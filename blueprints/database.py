@@ -30,6 +30,9 @@ class User(Base):
     reviewAllocations: Mapped[list["ReviewAllocation"]] = relationship(
         back_populates="reviewer"
     )
+    joinedConference: Mapped[list["JoinedConference"]] = relationship(
+        back_populates="user"
+    )
 
 
 class Conference(Base):
@@ -51,6 +54,9 @@ class Conference(Base):
     lastEdited: Mapped[datetime] = mapped_column(default=lambda: datetime.now(UTC))
 
     conferenceManager: Mapped["User"] = relationship(back_populates="conferences")
+    joinedConference: Mapped[list["JoinedConference"]] = relationship(
+        back_populates="conference"
+    )
 
 
 class Talk(Base):
@@ -113,3 +119,20 @@ class TalkResult(Base):
     isTieBreakApplied: Mapped[bool] = mapped_column(nullable=False)
 
     talk: Mapped["Talk"] = relationship(back_populates="talkResult", uselist=False)
+
+
+class JoinedConference(Base):
+    __tablename__ = "joinedConference"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    userId: Mapped[int] = mapped_column(ForeignKey("user.id"), nullable=False)
+    conferenceId: Mapped[int] = mapped_column(
+        ForeignKey("conference.id"), nullable=False
+    )
+
+    user: Mapped["User"] = relationship(
+        back_populates="joinedConference", uselist=False
+    )
+    conference: Mapped["Conference"] = relationship(
+        back_populates="joinedConference", uselist=False
+    )

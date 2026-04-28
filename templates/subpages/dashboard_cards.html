@@ -1,0 +1,19 @@
+<div class="row g-4 mb-4 justify-content-center align-items-stretch">
+
+    {% for card in dashboardCards %}
+    <div class="col-md-3 d-flex">
+        <div class="card shadow-sm w-100 h-100">
+            <a href="{{card.link}}" class="stretched-link"></a>
+            <div class="card-body d-flex align-items-center gap-3 p-4">
+                <img src="{{card.img}}" class="img-fluid" width="40">
+                <div class="flex-grow-1">
+                    <div class="fw-semibold">{{card.title}}</div>
+                    <small class="text-muted">{{card.description}}</small>
+                </div>
+                <i class="bi bi-arrow-right text-primary"></i>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+
+</div>
