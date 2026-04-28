@@ -44,9 +44,11 @@ def dashboard():
                 ),
             ]
             return render_template(
-                "display_pages/dashboard_speaker.html",
+                "display_pages/dashboard.html",
+                navbarLink="subpages/navbar_speaker.html",
                 conferenceTable_data=getJoinedConferences(),
                 dashboardCards=speakerCards,
+                conferenceTable_title="Joined Conferences",
             )
         case Role.REVIEWIER:
             reviewerCards = [
@@ -64,9 +66,11 @@ def dashboard():
                 ),
             ]
             return render_template(
-                "display_pages/dashboard_reviewer.html",
+                "display_pages/dashboard.html",
+                navbarLink="subpages/navbar_reviewer.html",
                 conferenceTable_data=getJoinedConferences(),
                 dashboardCards=reviewerCards,
+                conferenceTable_title="Joined Conferences",
             )
         case Role.CONFERENCE_MANAGER:
             conferenceManagerCards = [
@@ -78,9 +82,13 @@ def dashboard():
                 )
             ]
             return render_template(
-                "display_pages/dashboard_conference_manager.html",
+                "display_pages/dashboard.html",
+                navbarLink="subpages/navbar_conference_manager.html",
                 conferenceTable_data=getJoinedConferences(),
                 dashboardCards=conferenceManagerCards,
+                conferenceTable_title="My Conferences",
+                conferenceTable_buttonTitle="+ New Conference",
+                conferenceTable_buttonLink="new-conference-temp",
             )
     return render_template("display_pages/error.html")
 
