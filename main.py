@@ -24,7 +24,15 @@ with app.app_context():
 
 
 @app.route("/")
+@app.route("/home")
+@app.route("/index")
 def index():
+    """
+    Redirect to dashboard if home,index, or nothing is given as a subheader for the url.
+
+    Returns:
+        _type_: Redirect to dashboard
+    """
     return redirect("dashboard")
 
 

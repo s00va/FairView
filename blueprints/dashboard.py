@@ -13,6 +13,12 @@ dashboardBP = Blueprint(
 @dashboardBP.route("/dashboard", methods=["GET"])
 @redirectToLoginIfNotLoggedIn
 def dashboard():
+    """
+    Load dashboard html. Depending on the role type, the content viewed will differ.
+
+    Returns:
+        _type_: Dashboard html to render.
+    """
     # Get user role
     role = getUserRole()
     match role:
@@ -80,6 +86,10 @@ def dashboard():
 
 
 class dashboardCard:
+    """
+    Containing information to display a single card on the dashboard.
+    """
+
     def __init__(self, linkIn, imgIn, titleIn, descriptionIn):
         self.link = linkIn
         self.img = imgIn

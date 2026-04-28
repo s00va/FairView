@@ -22,20 +22,3 @@ def getJoinedConferences():
         .where(JoinedConference.userId == session["userId"])
     )
     return db.session.execute(statement).scalars().all()
-
-
-# @dashboardBP.route("/dashboard", methods=["GET"])
-# @redirectToLoginIfNotLoggedIn
-# def dashboard():
-#     # Get user role
-#     role = getUserRole()
-#     match role:
-#         case Role.SPEARKER:
-#             return render_template(
-#                 "display_pages/dashboard_speaker.html", conferences=joinedConferences
-#             )
-#         case Role.REVIEWIER:
-#             return render_template("display_pages/dashboard_reviewer.html")
-#         case Role.CONFERENCE_MANAGER:
-#             return render_template("display_pages/dashboard_conference_manager.html")
-#     return render_template("display_pages/error.html")
