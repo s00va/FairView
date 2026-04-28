@@ -64,7 +64,7 @@ def dashboard():
                 ),
             ]
             return render_template(
-                "display_pages/dashboard_speaker.html",
+                "display_pages/dashboard_reviewer.html",
                 conferenceTable_data=getJoinedConferences(),
                 dashboardCards=reviewerCards,
             )
@@ -78,7 +78,7 @@ def dashboard():
                 )
             ]
             return render_template(
-                "display_pages/dashboard_speaker.html",
+                "display_pages/dashboard_conference_manager.html",
                 conferenceTable_data=getJoinedConferences(),
                 dashboardCards=conferenceManagerCards,
             )
