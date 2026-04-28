@@ -6,7 +6,7 @@ from sqlalchemy import select
 from functools import wraps
 
 accountBP = Blueprint(
-    "userAccount", __name__, static_folder="../static", template_folder="../templates"
+    "account", __name__, static_folder="../static", template_folder="../templates"
 )
 ph = PasswordHasher()
 
@@ -27,6 +27,20 @@ def validateUserLoggedIn() -> bool:
         ):
             return True
     return False
+
+
+def getUserRole() -> Role:
+    """
+    Get the role of the logged in user.
+
+    Returns:
+        Role: Role of the logged in user.
+    """
+    user = db.session.scalar(select(User).where(User.id == session["userId"]))
+    if user is None:
+        return Role.NULL
+    else:
+        return user.role
 
 
 def redirectToDashIfLoggedIn(funcIn):
@@ -69,6 +83,18 @@ def redirectToLoginIfNotLoggedIn(funcIn):
     return wrapper
 
 
+@accountBP.route("/log-out", methods=["POST"])
+def logout():
+    """
+    Clear user session cache. Log out of account.
+
+    Returns:
+        _type_: Redirect to login page.
+    """
+    session.pop("userId", None)
+    return redirect("/login")
+
+
 @accountBP.route("/login", methods=["GET", "POST"])
 @redirectToDashIfLoggedIn
 def login():
@@ -96,7 +122,9 @@ def login():
 
         return (
             "<p class='text-success'>SUCCESS: Logged into account! Redirecting...</p>"
-            + render_template("redirect_in_x.html", url="/dashboard", delay=500)
+            + render_template(
+                "subpages/redirect_in_x_ms.html", url="/dashboard", delay=500
+            )
         )
         # return "<p class='text-danger'>ERROR: Username already exists.</p>"
     else:
@@ -164,7 +192,9 @@ def signUp():
         # Return successful message and redirect page to dashboard
         return (
             "<p class='text-success'>SUCCESS: Account has been registered! Redirecting...</p>"
-            + render_template("redirect_in_x.html", url="/dashboard", delay=500)
+            + render_template(
+                "subpages/redirect_in_x_ms.html", url="/dashboard", delay=500
+            )
         )
     else:
         return render_template("display_pages/sign_up.html")

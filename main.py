@@ -2,10 +2,12 @@ from flask import Flask, render_template, session
 from datetime import timedelta
 from blueprints.database import db, Base
 from blueprints.account import accountBP
+from blueprints.dashboard import dashboardBP
 
 
 app = Flask(__name__)
 app.register_blueprint(accountBP, url_prefix="")
+app.register_blueprint(dashboardBP, url_prefix="")
 app.config |= {
     "SQLALCHEMY_ENGINES": {
         "default": "sqlite:///default.sqlite",
@@ -21,9 +23,9 @@ with app.app_context():
     Base.metadata.create_all(db.engine)
 
 
-@app.route("/")
-def index():
-    return render_template("subpages/base.html")
+# @app.route("/")
+# def index():
+#     return render_template("subpages/base.html")
 
 
 if __name__ == "__main__":

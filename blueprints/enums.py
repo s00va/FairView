@@ -3,6 +3,7 @@ from sqlalchemy import Enum as SQLAlchemyEnum
 
 
 class Role(Enum):
+    NULL = 0
     SPEARKER = 1
     REVIEWIER = 2
     CONFERENCE_MANAGER = 3
