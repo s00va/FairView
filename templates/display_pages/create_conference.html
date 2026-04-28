@@ -1,0 +1,65 @@
+{% extends 'subpages/base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block header %} {% endblock %}
+
+{% block body %}
+
+{% include 'subpages/navbar_conference_manager.html' %}
+
+<div class="container py-5">
+    <div class="card shadow-sm">
+        <div class="card-body p-4">
+
+            <h5 class="card-title fw-semibold">Conference Details</h5>
+            <p class="text-muted small mb-4">Basic information about your conference</p>
+
+            <div id="feedback_container" class="mt-2"></div>
+            <form class="row g-4" method="POST" action="/create-conference" hx-post="/create-conference"
+                hx-target="#feedback_container">
+
+                <div class="col-md-10">
+                    <label for="title_input" class="form-label">Conference Title</label>
+                    <input type="text" class="form-control" id="title_input" name="title_input"
+                        placeholder="e.g. International AI Conference 2026">
+                </div>
+
+                <div class="col-md-2">
+                    <label for="slots_input" class="form-label">Talk Slots</label>
+                    <input type="number" class="form-control text-center" id="slots_input" name="slots_input" min="1"
+                        step="1" placeholder="0">
+                </div>
+
+                <div class="col-12">
+                    <label for="description_input" class="form-label">Conference Description</label>
+                    <textarea class="form-control" id="description_input" name="description_input" rows="4"
+                        placeholder="Describe the purpose of the conference..."></textarea>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="conferenceDate_input" class="form-label">Conference Date</label>
+                    <input type="date" class="form-control" id="conferenceDate_input" name="conferenceDate_input">
+                    <div class="form-text">When the conference takes place</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="submissionDeadline_input" class="form-label">Submission Deadline</label>
+                    <input type="date" class="form-control" id="submissionDeadline_input"
+                        name="submissionDeadline_input">
+                    <div class="form-text">Last day to submit talks</div>
+                </div>
+
+                <div class="col-12 text-end mt-3">
+                    <button type="submit" class="btn btn-primary px-4">
+                        + Create Conference
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

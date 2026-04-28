@@ -1,7 +1,12 @@
 from flask import Blueprint, render_template, redirect, request, session
 from blueprints.database import db, User, Conference, Role, JoinedConference
-from blueprints.account import redirectToLoginIfNotLoggedIn, getUserRole
-from blueprints.conferences import getJoinedConferences
+from blueprints.account import (
+    redirectToLoginIfNotLoggedIn,
+    getUserRole,
+    getInvertedName,
+)
+from blueprints.conferences import getJoinedConferences, getUserCreatedConferences
+from blueprints.enums import ConferenceStatus
 from sqlalchemy import select
 from functools import wraps
 
@@ -46,9 +51,11 @@ def dashboard():
             return render_template(
                 "display_pages/dashboard.html",
                 navbarLink="subpages/navbar_speaker.html",
+                invertedName=getInvertedName(),
                 conferenceTable_data=getJoinedConferences(),
                 dashboardCards=speakerCards,
                 conferenceTable_title="Joined Conferences",
+                conferenceStatus=ConferenceStatus,
             )
         case Role.REVIEWIER:
             reviewerCards = [
@@ -68,14 +75,16 @@ def dashboard():
             return render_template(
                 "display_pages/dashboard.html",
                 navbarLink="subpages/navbar_reviewer.html",
+                invertedName=getInvertedName(),
                 conferenceTable_data=getJoinedConferences(),
                 dashboardCards=reviewerCards,
                 conferenceTable_title="Joined Conferences",
+                conferenceStatus=ConferenceStatus,
             )
         case Role.CONFERENCE_MANAGER:
             conferenceManagerCards = [
                 dashboardCard(
-                    "createConferenceTemp",
+                    "create-conference",
                     "static/img/dashboard/new_talk_icon.png",
                     "Create New Conference",
                     "Create a new conference",
@@ -84,11 +93,14 @@ def dashboard():
             return render_template(
                 "display_pages/dashboard.html",
                 navbarLink="subpages/navbar_conference_manager.html",
-                conferenceTable_data=getJoinedConferences(),
+                invertedName=getInvertedName(),
+                conferenceTable_data=getUserCreatedConferences(),
                 dashboardCards=conferenceManagerCards,
                 conferenceTable_title="My Conferences",
                 conferenceTable_buttonTitle="+ New Conference",
-                conferenceTable_buttonLink="new-conference-temp",
+                conferenceTable_buttonLink="create-conference",
+                conferenceStatus=ConferenceStatus,
+                confernceTable_showLastEdited=True,
             )
     return render_template("display_pages/error.html")
 

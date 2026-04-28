@@ -21,12 +21,32 @@ def validateUserLoggedIn() -> bool:
     # Check for a userId session
     if "userId" in session:
         # Validate ID is a real value
-        if (
-            db.session.scalar(select(User).where(User.id == session["userId"]))
-            is not None
-        ):
+        if getCurrentUser() is not None:
             return True
     return False
+
+
+def getCurrentUser() -> User | None:
+    """
+    If a user is saved in session/logged in, return the user details.
+
+    Returns:
+        User | None: User details. Or None if no user is logged in.
+    """
+    return db.session.scalar(select(User).where(User.id == session["userId"]))
+
+
+def getInvertedName() -> str:
+    """
+    Get inverted name of logged in user. EG Dylan, B
+
+    Returns:
+        str: Inverted name
+    """
+    currentUser = getCurrentUser()
+    if currentUser == None:
+        return ""
+    return f"{currentUser.surname}, {currentUser.forename[0]}"
 
 
 def getUserRole() -> Role:
@@ -36,7 +56,7 @@ def getUserRole() -> Role:
     Returns:
         Role: Role of the logged in user.
     """
-    user = db.session.scalar(select(User).where(User.id == session["userId"]))
+    user = getCurrentUser()
     if user is None:
         return Role.NULL
     else:
@@ -159,8 +179,8 @@ def signUp():
         if len(email) < 5:
             return "<p class='text-danger'>ERROR: Email must be atleast 5 characters long.</p>"
 
-        # Ensure the affiliation is atleast 5 characters long
-        if len(affiliation) < 5:
+        # Ensure the affiliation is atleast 3 characters long
+        if len(affiliation) < 3:
             return "<p class='text-danger'>ERROR: Affiliation must be atleast 5 characters long.</p>"
 
         # Validate email address doesn't exist in database
