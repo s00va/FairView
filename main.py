@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session
+from flask import Flask, render_template, session, redirect
 from datetime import timedelta
 from blueprints.database import db, Base
 from blueprints.account import accountBP
@@ -23,9 +23,17 @@ with app.app_context():
     Base.metadata.create_all(db.engine)
 
 
-# @app.route("/")
-# def index():
-#     return render_template("subpages/base.html")
+@app.route("/")
+@app.route("/home")
+@app.route("/index")
+def index():
+    """
+    Redirect to dashboard if home,index, or nothing is given as a subheader for the url.
+
+    Returns:
+        _type_: Redirect to dashboard
+    """
+    return redirect("dashboard")
 
 
 if __name__ == "__main__":

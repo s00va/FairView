@@ -1,0 +1,47 @@
+{% extends 'subpages/table_generic.html' %}
+{% block tableTitle %}{{conferenceTable_title}}{% endblock %}
+{% block tableTopExtras %}
+{% if conferenceTable_buttonTitle %}
+<a href="{{conferenceTable_buttonLink}}" class="btn btn-outline-secondary btn-sm">
+    {{conferenceTable_buttonTitle}}
+</a>
+{%endif%}
+{% endblock %}
+
+
+{% block tableHeaders %}
+<th scope="col">Title</th>
+<th scope="col">Description</th>
+<th scope="col">Showing</th>
+<th scope="col">Created</th>
+<th scope="col">Status</th>
+<th scope="col">Action</th>
+{% endblock %}
+
+{% block tableBody %}
+{% for row in conferenceTable_data %}
+<tr>
+    <td>{{row.title}}</td>
+    <td>{{row.description}}</td>
+    <td>{{row.conferenceDate}}</td>
+    <td>{{row.createdDate}}</td>
+    {% if row.status == OPEN %}
+    <td><span class="badge text-bg-success ">Open</span></td>
+    {% endif %}
+    {% if row.status == UNDER_REVIEW %}
+    <td><span class="badge text-bg-warning ">Under Review</span></td>
+    {% endif %}
+    {% if row.status == TALK_SLOTS_ALLOCATED %}
+    <td><span class="badge text-bg-info ">Talking Slots Allocated</span></td>
+    {% endif %}
+    {% if row.status == CLOSED %}
+    <td><span class="badge text-bg-secondary ">Closed</span></td>
+    {% endif %}
+    <td>
+        <a href="#" class="text-decoration-none">
+            Manage <i class="bi bi-arrow-right"></i>
+        </a>
+    </td>
+</tr>
+{%endfor%}
+{% endblock %}
