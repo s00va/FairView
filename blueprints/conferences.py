@@ -1,8 +1,15 @@
 from flask import Blueprint, render_template, redirect, request, session
 from blueprints.database import db, Conference, Role, JoinedConference
-from blueprints.account import redirectToLoginIfNotLoggedIn, getUserRole, getCurrentUser
+from blueprints.account import (
+    redirectToLoginIfNotLoggedIn,
+    getUserRole,
+    getCurrentUser,
+    getInvertedName,
+    getLoggedInUserId,
+    getNavbarLink,
+)
 from blueprints.enums import ConferenceStatus
-from sqlalchemy import select
+from sqlalchemy import select, case
 from datetime import datetime
 
 conferenceBP = Blueprint(
@@ -20,9 +27,33 @@ def getJoinedConferences():
     statement = (
         select(Conference)
         .join(JoinedConference, Conference.id == JoinedConference.conferenceId)
-        .where(JoinedConference.userId == session["userId"])
+        .where(JoinedConference.userId == getLoggedInUserId())
     )
     return db.session.execute(statement).scalars().all()
+
+
+def getAllConferencesAndIfUserHasJoined():
+    """
+    Get a list of all conferences merged with Joined Conferences. Checking if the current user has joined the conference.
+
+    Returns:
+        _type_: Array of conferences.
+    """
+    statement = select(
+        Conference.id,
+        Conference.title,
+        Conference.description,
+        Conference.createdDate,
+        Conference.conferenceDate,
+        Conference.lastEdited,
+        Conference.status,
+        JoinedConference.userId,
+    ).outerjoin(
+        JoinedConference,
+        (Conference.id == JoinedConference.conferenceId)
+        & (JoinedConference.userId == getLoggedInUserId()),
+    )
+    return db.session.execute(statement).all()
 
 
 def getUserCreatedConferences():
@@ -33,9 +64,23 @@ def getUserCreatedConferences():
         _type_: Array of conferences.
     """
     statement = select(Conference).where(
-        Conference.conferenceManagerId == session["userId"]
+        Conference.conferenceManagerId == getLoggedInUserId()
     )
     return db.session.execute(statement).scalars().all()
+
+
+def getConference(conferenceIdIn: int) -> Conference | None:
+    """
+    Get the conference with the id of conferenceIdIn.
+    If none is found return None.
+
+    Args:
+        conferenceIdIn (int): The ID of the target conference.
+
+    Returns:
+        Conference | None: The target conference or None.
+    """
+    return db.session.scalar(select(Conference).where(Conference.id == conferenceIdIn))
 
 
 @conferenceBP.route("/create-conference", methods=["GET", "POST"])
@@ -56,9 +101,9 @@ def createConference():
         if len(title) < 3:
             return "<p class='text-danger'>ERROR: Title must be at least 3 characters long.</p>"
 
-        # Ensure the description is at least 10 character long
-        if len(description) < 10:
-            return "<p class='text-danger'>ERROR: Description must be at least 10 characters long.</p>"
+        # Ensure the description is at least 1 character long
+        if len(description) < 1:
+            return "<p class='text-danger'>ERROR: Description must be at least 1 characters long.</p>"
 
         # Attempt to convert conferenceDate into datetime format. This will fail if the passed string is incorrect or empty
         try:
@@ -116,3 +161,95 @@ def createConference():
         if role != Role.CONFERENCE_MANAGER:
             return redirect("/dashboard")
         return render_template("/display_pages/create_conference.html")
+
+
+@conferenceBP.route("/conferences", methods=["GET"])
+@redirectToLoginIfNotLoggedIn
+def searchConferences():
+    """
+    Returns html to display a list of every conference. Have the ability to join or manage conferences.
+
+    Returns:
+        _type_: HTML of conferences page.
+    """
+    # Get user role
+    role = getUserRole()
+    # Redirect to dashboard if not Reviewer or Speaker
+    if role not in [Role.SPEAKER, Role.REVIEWER]:
+        return redirect("/dashboard")
+
+    return render_template(
+        "/display_pages/search_conferences.html",
+        navbarLink=getNavbarLink(),
+        invertedName=getInvertedName(),
+        conferenceTable_data=getAllConferencesAndIfUserHasJoined(),
+        conferenceTable_title="All Conferences",
+        conferenceStatus=ConferenceStatus,
+        conferenceTable_showJoined=True,
+    )
+
+
+@conferenceBP.route("/manage-conference/<conferenceIdIn>", methods=["GET"])
+@redirectToLoginIfNotLoggedIn
+def manageConference(conferenceIdIn: str):
+    """
+    Provide renderable HTML to manage actions for a specific conference.
+    This includes viewing general details of a conference for all roles.
+
+    Args:
+        conferenceIdIn (str): Individual path segment. Specifies the conference to manage.
+
+    Returns:
+        _type_: Renderable HTML.
+    """
+    # Attempt to convert conferenceIdIn into int
+    try:
+        conferenceId = int(conferenceIdIn)
+    except ValueError:
+        return redirect("/dashboard")
+
+    # Validate conferenceIdIn is a real conference
+    conference = getConference(conferenceId)
+
+    if conference is None:
+        return redirect("/dashboard")
+
+    # If the user is a speaker or reviewer, check if they have joined the conference. If not, join the conference.
+    role = getUserRole()
+    if role in [Role.SPEAKER, Role.REVIEWER]:
+        if (
+            db.session.scalar(
+                select(JoinedConference).where(
+                    JoinedConference.conferenceId == conferenceId
+                    and JoinedConference.userId == getLoggedInUserId()
+                )
+            )
+            is None
+        ):
+            # Join the conference
+            newJoinedConference = JoinedConference(
+                userId=getLoggedInUserId(), conferenceId=conferenceId
+            )
+            db.session.add(newJoinedConference)
+            db.session.commit()
+            # Refresh page
+            return redirect(request.url)
+
+            # return f"<h1>TESTING {conferenceIdIn}</h1>"
+
+    templateToShow = "display_pages/error.html"
+    match role:
+        case Role.SPEAKER:
+            templateToShow = "/display_pages/manage_conference_speaker.html"
+        case Role.REVIEWER:
+            templateToShow = "/display_pages/manage_conference_reviewer.html"
+        case Role.CONFERENCE_MANAGER:
+            templateToShow = "/display_pages/manage_conference_conference_manager.html"
+
+    return render_template(
+        templateToShow,
+        navbarLink=getNavbarLink(),
+        invertedName=getInvertedName(),
+        conference=conference,
+        conferenceStatus=ConferenceStatus,
+    )

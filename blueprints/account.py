@@ -11,6 +11,16 @@ accountBP = Blueprint(
 ph = PasswordHasher()
 
 
+def getLoggedInUserId() -> str | None:
+    """
+    Return the Id of the logged in User. This can be None if not defined
+
+    Returns:
+        str | None: The logged in UserID or None.
+    """
+    return session["userId"]
+
+
 def validateUserLoggedIn() -> bool:
     """
     Checks for a valid user ID in session. This proves that the user is logged in.
@@ -33,7 +43,7 @@ def getCurrentUser() -> User | None:
     Returns:
         User | None: User details. Or None if no user is logged in.
     """
-    return db.session.scalar(select(User).where(User.id == session["userId"]))
+    return db.session.scalar(select(User).where(User.id == getLoggedInUserId()))
 
 
 def getInvertedName() -> str:
@@ -101,6 +111,25 @@ def redirectToLoginIfNotLoggedIn(funcIn):
         return funcIn(*args, **kwargs)
 
     return wrapper
+
+
+def getNavbarLink() -> str | None:
+    """
+    Get the required navbar link based upon the role of the user. If the user is not logged in, return None.
+
+    Returns:
+        str | None: The link of the required navbar for the logged in user.
+    """
+
+    role = getUserRole()
+    match role:
+        case Role.SPEAKER:
+            return "subpages/navbar_speaker.html"
+        case Role.REVIEWER:
+            return "subpages/navbar_reviewer.html"
+        case Role.CONFERENCE_MANAGER:
+            return "subpages/navbar_conference_manager.html"
+    return None
 
 
 @accountBP.route("/log-out", methods=["POST"])

@@ -53,6 +53,7 @@ def dashboard():
                 dashboardCards=speakerCards,
                 conferenceTable_title="Joined Conferences",
                 conferenceStatus=ConferenceStatus,
+                conferenceTable_showJoined=False,
             )
         case Role.REVIEWER:
             reviewerCards = [
@@ -77,6 +78,7 @@ def dashboard():
                 dashboardCards=reviewerCards,
                 conferenceTable_title="Joined Conferences",
                 conferenceStatus=ConferenceStatus,
+                conferenceTable_showJoined=False,
             )
         case Role.CONFERENCE_MANAGER:
             conferenceManagerCards = [
@@ -98,6 +100,7 @@ def dashboard():
                 conferenceTable_buttonLink="create-conference",
                 conferenceStatus=ConferenceStatus,
                 conferenceTable_showLastEdited=True,
+                conferenceTable_showJoined=False,
             )
     return render_template("display_pages/error.html")
 
