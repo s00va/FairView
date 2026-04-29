@@ -26,19 +26,19 @@ def dashboard():
     match role:
         case Role.SPEAKER:
             speakerCards = [
-                dashboardCard(
+                DashboardCard(
                     "createTalkTemp",
                     "static/img/dashboard/new_talk_icon.png",
                     "Create New Talk",
                     "Submit a new talk to a conference",
                 ),
-                dashboardCard(
+                DashboardCard(
                     "talks",
                     "static/img/dashboard/view_talks_icon.png",
                     "Manage Talks",
                     "View and manage your existing talks",
                 ),
-                dashboardCard(
+                DashboardCard(
                     "conferences",
                     "static/img/dashboard/join_conference_icon.png",
                     "Join Conference",
@@ -53,16 +53,17 @@ def dashboard():
                 dashboardCards=speakerCards,
                 conferenceTable_title="Joined Conferences",
                 conferenceStatus=ConferenceStatus,
+                conferenceTable_showJoined=False,
             )
         case Role.REVIEWER:
             reviewerCards = [
-                dashboardCard(
+                DashboardCard(
                     "reviews",
                     "static/img/dashboard/view_talks_icon.png",
                     "Manage Reviews",
                     "View and manage your existing reviews",
                 ),
-                dashboardCard(
+                DashboardCard(
                     "conferences",
                     "static/img/dashboard/join_conference_icon.png",
                     "Join Conference",
@@ -77,10 +78,11 @@ def dashboard():
                 dashboardCards=reviewerCards,
                 conferenceTable_title="Joined Conferences",
                 conferenceStatus=ConferenceStatus,
+                conferenceTable_showJoined=False,
             )
         case Role.CONFERENCE_MANAGER:
             conferenceManagerCards = [
-                dashboardCard(
+                DashboardCard(
                     "create-conference",
                     "static/img/dashboard/new_talk_icon.png",
                     "Create New Conference",
@@ -98,11 +100,12 @@ def dashboard():
                 conferenceTable_buttonLink="create-conference",
                 conferenceStatus=ConferenceStatus,
                 conferenceTable_showLastEdited=True,
+                conferenceTable_showJoined=False,
             )
     return render_template("display_pages/error.html")
 
 
-class dashboardCard:
+class DashboardCard:
     """
     Containing information to display a single card on the dashboard.
     """

@@ -1,0 +1,81 @@
+{% extends 'subpages/base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block header %} {% endblock %}
+
+{% block body %}
+
+{% include navbarLink %}
+
+<div class="container py-5">
+    <div class="card shadow-sm">
+        <div class="card-body p-4">
+
+            <h5 class="card-title fw-semibold">Conference Details</h5>
+            <p class="text-muted small mb-4">Basic information about the conference</p>
+
+            <div id="feedback_container" class="mt-2"></div>
+            <div class="row g-4">
+
+                <div class="col-md-8">
+                    <label for="title_input" class="form-label">Conference Title</label>
+                    <input type="text" class="form-control" id="title_input" name="title_input"
+                        value="{{conference.title}}" disabled>
+                </div>
+
+
+                <div class="col-md-2">
+                    <label for="slots_input" class="form-label">Talk Slots</label>
+                    <input type="number" class="form-control text-center" id="slots_input" name="slots_input" min="1"
+                        step="1" value="{{conference.talkSlots}}" disabled>
+                </div>
+
+                <div class="col-md-2">
+                    <label for="status_text" class="form-label">Status</label>
+                    {% if conference.status == conferenceStatus.OPEN %}
+                    <td><span class="form-control text-bg-success" id="status_text">Open</span></td>
+                    {% endif %}
+                    {% if conference.status == conferenceStatus.UNDER_REVIEW %}
+                    <td><span class="form-control text-bg-warning" id="status_text">Under Review</span></td>
+                    {% endif %}
+                    {% if conference.status == conferenceStatus.TALK_SLOTS_ALLOCATED %}
+                    <td><span class="form-control text-bg-info" id="status_text">Talking Slots Allocated</span></td>
+                    {% endif %}
+                    {% if conference.status == conferenceStatus.CLOSED %}
+                    <td><span class="form-control text-bg-secondary" id="status_text">Closed</span></td>
+                    {% endif %}
+                </div>
+
+                <div class="col-12">
+                    <label for="description_input" class="form-label">Conference Description</label>
+                    <textarea class="form-control" id="description_input" name="description_input" rows="4"
+                        disabled>{{conference.description}}</textarea>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="conferenceDate_input" class="form-label">Conference Date</label>
+                    <input type="date" class="form-control" id="conferenceDate_input" name="conferenceDate_input"
+                        disabled value="{{conference.conferenceDate.strftime('%Y-%m-%d')}}">
+                    <div class="form-text">When the conference takes place</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="submissionDeadline_input" class="form-label">Submission Deadline</label>
+                    <input type="date" class="form-control" id="submissionDeadline_input"
+                        name="submissionDeadline_input" disabled
+                        value="{{conference.submissionDeadline.strftime('%Y-%m-%d')}}">
+                    <div class="form-text">Last day to submit talks</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% block manageConference %} {% endblock %}
+</div>
+
+
+
+{% endblock %}

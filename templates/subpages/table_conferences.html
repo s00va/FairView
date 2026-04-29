@@ -44,8 +44,13 @@
     <td><span class="badge text-bg-secondary ">Closed</span></td>
     {% endif %}
     <td>
-        <a href="#" class="text-decoration-none">
-            Manage <i class="bi bi-arrow-right"></i>
+        <a href="/manage-conference/{{row.id}}" class="text-decoration-none">
+            {% if row.userId is none and conferenceTable_showJoined %}
+            Join
+            {% else %}
+            Manage
+            {%endif%}
+            <i class="bi bi-arrow-right"></i>
         </a>
     </td>
 </tr>

@@ -2,14 +2,14 @@
 {% block navItems %}
 <li class="nav-item">
     <a class="nav-link active {% if request.path == '/dashboard' %} fw-bold {% endif %}" aria-current="page"
-        href="dashboard">Dashboard</a>
+        href="/dashboard">Dashboard</a>
 </li>
 <li class="nav-item">
     <a class="nav-link active {% if request.path == '/conferences' %} fw-bold {% endif %}" aria-current="page"
-        href="conferences">Conferences</a>
+        href="/conferences">Conferences</a>
 </li>
 <li class="nav-item">
     <a class="nav-link active {% if request.path == '/reviews' %} fw-bold {% endif %}" aria-current="page"
-        href="reviews">Reviews</a>
+        href="/reviews">Reviews</a>
 </li>
 {% endblock %}
