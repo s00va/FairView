@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, request, session
+from flask import Blueprint, render_template, redirect, request
 from blueprints.database import db, Conference, Role, JoinedConference
 from blueprints.account import (
     redirectToLoginIfNotLoggedIn,
@@ -9,7 +9,7 @@ from blueprints.account import (
     getNavbarLink,
 )
 from blueprints.enums import ConferenceStatus
-from sqlalchemy import select, case
+from sqlalchemy import select
 from datetime import datetime
 
 conferenceBP = Blueprint(
