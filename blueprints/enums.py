@@ -1,21 +1,20 @@
 from enum import Enum
-from sqlalchemy import Enum as SQLAlchemyEnum
 
 
 class Role(Enum):
     NULL = 0
-    SPEARKER = 1
-    REVIEWIER = 2
+    SPEAKER = 1
+    REVIEWER = 2
     CONFERENCE_MANAGER = 3
 
     @staticmethod
     def from_str(label):
-        lablelLowered = label.lower()
-        if lablelLowered == "speaker":
-            return Role.SPEARKER
-        elif lablelLowered == "reviewer":
-            return Role.REVIEWIER
-        elif lablelLowered in ("conference manager", "conference_manager"):
+        labelLowered = label.lower()
+        if labelLowered == "speaker":
+            return Role.SPEAKER
+        elif labelLowered == "reviewer":
+            return Role.REVIEWER
+        elif labelLowered in ("conference manager", "conference_manager"):
             return Role.CONFERENCE_MANAGER
         else:
             raise NotImplementedError

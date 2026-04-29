@@ -1,6 +1,5 @@
-from flask import Flask
 from flask_sqlalchemy_lite import SQLAlchemy
-from sqlalchemy import select, ForeignKey, Enum as SQLAlchemyEnum, String
+from sqlalchemy import ForeignKey, Enum as SQLAlchemyEnum, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from datetime import datetime, UTC
 from blueprints.enums import Role, ConferenceStatus

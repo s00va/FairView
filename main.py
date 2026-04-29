@@ -1,13 +1,15 @@
-from flask import Flask, render_template, session, redirect
+from flask import Flask, redirect
 from datetime import timedelta
 from blueprints.database import db, Base
 from blueprints.account import accountBP
 from blueprints.dashboard import dashboardBP
+from blueprints.conferences import conferenceBP
 
 
 app = Flask(__name__)
 app.register_blueprint(accountBP, url_prefix="")
 app.register_blueprint(dashboardBP, url_prefix="")
+app.register_blueprint(conferenceBP, url_prefix="")
 app.config |= {
     "SQLALCHEMY_ENGINES": {
         "default": "sqlite:///default.sqlite",

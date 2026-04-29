@@ -12,8 +12,11 @@
 {% block tableHeaders %}
 <th scope="col">Title</th>
 <th scope="col">Description</th>
-<th scope="col">Showing</th>
 <th scope="col">Created</th>
+<th scope="col">Showing</th>
+{% if conferenceTable_showLastEdited %}
+<th scope="col">Last Edited</th>
+{% endif %}
 <th scope="col">Status</th>
 <th scope="col">Action</th>
 {% endblock %}
@@ -23,18 +26,21 @@
 <tr>
     <td>{{row.title}}</td>
     <td>{{row.description}}</td>
-    <td>{{row.conferenceDate}}</td>
-    <td>{{row.createdDate}}</td>
-    {% if row.status == OPEN %}
+    <td>{{row.createdDate.strftime('%Y-%m-%d')}}</td>
+    <td>{{row.conferenceDate.strftime('%Y-%m-%d')}}</td>
+    {% if conferenceTable_showLastEdited %}
+    <td>{{row.lastEdited.strftime('%Y-%m-%d')}}</td>
+    {% endif %}
+    {% if row.status == conferenceStatus.OPEN %}
     <td><span class="badge text-bg-success ">Open</span></td>
     {% endif %}
-    {% if row.status == UNDER_REVIEW %}
+    {% if row.status == conferenceStatus.UNDER_REVIEW %}
     <td><span class="badge text-bg-warning ">Under Review</span></td>
     {% endif %}
-    {% if row.status == TALK_SLOTS_ALLOCATED %}
+    {% if row.status == conferenceStatus.TALK_SLOTS_ALLOCATED %}
     <td><span class="badge text-bg-info ">Talking Slots Allocated</span></td>
     {% endif %}
-    {% if row.status == CLOSED %}
+    {% if row.status == conferenceStatus.CLOSED %}
     <td><span class="badge text-bg-secondary ">Closed</span></td>
     {% endif %}
     <td>
