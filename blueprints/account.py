@@ -44,7 +44,7 @@ def getInvertedName() -> str:
         str: Inverted name
     """
     currentUser = getCurrentUser()
-    if currentUser == None:
+    if currentUser is None:
         return ""
     return f"{currentUser.surname}, {currentUser.forename[0]}"
 
@@ -167,21 +167,21 @@ def signUp():
         password = request.form.get("password_input", "").strip()
         role = request.form.get("role_input", "").strip()
 
-        # Ensure the forename is atleast 3 characters long
+        # Ensure the forename is at least 3 characters long
         if len(forename) < 3:
-            return "<p class='text-danger'>ERROR: Forename must be atleast 3 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Forename must be at least 3 characters long.</p>"
 
-        # Ensure the surname is atleast 3 characters long
+        # Ensure the surname is at least 3 characters long
         if len(surname) < 3:
-            return "<p class='text-danger'>ERROR: Surname must be atleast 3 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Surname must be at least 3 characters long.</p>"
 
-        # Ensure the email is atleast 5 characters long
+        # Ensure the email is at least 5 characters long
         if len(email) < 5:
-            return "<p class='text-danger'>ERROR: Email must be atleast 5 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Email must be at least 5 characters long.</p>"
 
-        # Ensure the affiliation is atleast 3 characters long
+        # Ensure the affiliation is at least 3 characters long
         if len(affiliation) < 3:
-            return "<p class='text-danger'>ERROR: Affiliation must be atleast 5 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Affiliation must be at least 3 characters long.</p>"
 
         # Validate email address doesn't exist in database
         if db.session.scalar(select(User).where(User.email == email)) is not None:
@@ -189,7 +189,7 @@ def signUp():
 
         # Ensure password is secure (has a length of 6 characters or more)
         if len(password) < 6:
-            return "<p class='text-danger'>ERROR: Password must be atleast 6 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Password must be at least 6 characters long.</p>"
 
         # Hash password
         hashedPassword = ph.hash(password)

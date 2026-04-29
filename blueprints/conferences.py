@@ -1,9 +1,8 @@
 from flask import Blueprint, render_template, redirect, request, session
-from blueprints.database import db, User, Conference, Role, JoinedConference
+from blueprints.database import db, Conference, Role, JoinedConference
 from blueprints.account import redirectToLoginIfNotLoggedIn, getUserRole, getCurrentUser
 from blueprints.enums import ConferenceStatus
 from sqlalchemy import select
-from functools import wraps
 from datetime import datetime
 
 conferenceBP = Blueprint(
@@ -43,7 +42,7 @@ def getUserCreatedConferences():
 @redirectToLoginIfNotLoggedIn
 def createConference():
     """
-    POST: Handles a form post request of neccessary information to create a new conference.
+    POST: Handles a form post request of necessary information to create a new conference.
     GET: Load 'Create Conference' HTML.
     """
     if request.method == "POST":
@@ -53,13 +52,13 @@ def createConference():
         conferenceDateStr = request.form.get("conferenceDate_input", "").strip()
         submissionDeadlineStr = request.form.get("submissionDeadline_input", "").strip()
 
-        # Ensure the title is atleast 3 characters long
+        # Ensure the title is at least 3 characters long
         if len(title) < 3:
-            return "<p class='text-danger'>ERROR: Title must be atleast 3 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Title must be at least 3 characters long.</p>"
 
-        # Ensure the description is atleast 10 character long
+        # Ensure the description is at least 10 character long
         if len(description) < 10:
-            return "<p class='text-danger'>ERROR: Description must be atleast 10 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Description must be at least 10 characters long.</p>"
 
         # Attempt to convert conferenceDate into datetime format. This will fail if the passed string is incorrect or empty
         try:
@@ -114,7 +113,6 @@ def createConference():
         # Get user role
         role = getUserRole()
         # Redirect to dashboard if not Conference Manager
-        print(role)
         if role != Role.CONFERENCE_MANAGER:
             return redirect("/dashboard")
         return render_template("/display_pages/create_conference.html")

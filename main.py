@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, redirect
+from flask import Flask, redirect
 from datetime import timedelta
 from blueprints.database import db, Base
 from blueprints.account import accountBP

@@ -1,14 +1,11 @@
-from flask import Blueprint, render_template, redirect, request, session
-from blueprints.database import db, User, Conference, Role, JoinedConference
+from flask import Blueprint, render_template
 from blueprints.account import (
     redirectToLoginIfNotLoggedIn,
     getUserRole,
     getInvertedName,
 )
 from blueprints.conferences import getJoinedConferences, getUserCreatedConferences
-from blueprints.enums import ConferenceStatus
-from sqlalchemy import select
-from functools import wraps
+from blueprints.enums import ConferenceStatus, Role
 
 dashboardBP = Blueprint(
     "dashboard", __name__, static_folder="../static", template_folder="../templates"
@@ -27,7 +24,7 @@ def dashboard():
     # Get user role
     role = getUserRole()
     match role:
-        case Role.SPEARKER:
+        case Role.SPEAKER:
             speakerCards = [
                 dashboardCard(
                     "createTalkTemp",
@@ -57,7 +54,7 @@ def dashboard():
                 conferenceTable_title="Joined Conferences",
                 conferenceStatus=ConferenceStatus,
             )
-        case Role.REVIEWIER:
+        case Role.REVIEWER:
             reviewerCards = [
                 dashboardCard(
                     "reviews",
@@ -100,7 +97,7 @@ def dashboard():
                 conferenceTable_buttonTitle="+ New Conference",
                 conferenceTable_buttonLink="create-conference",
                 conferenceStatus=ConferenceStatus,
-                confernceTable_showLastEdited=True,
+                conferenceTable_showLastEdited=True,
             )
     return render_template("display_pages/error.html")
 
