@@ -32,18 +32,18 @@
                 </div>
 
                 <div class="col-md-2">
-                    <label for="slots_input" class="form-label">Status</label>
+                    <label for="status_text" class="form-label">Status</label>
                     {% if conference.status == conferenceStatus.OPEN %}
-                    <td><span class="form-control text-bg-success ">Open</span></td>
+                    <td><span class="form-control text-bg-success" id="status_text">Open</span></td>
                     {% endif %}
                     {% if conference.status == conferenceStatus.UNDER_REVIEW %}
-                    <td><span class="form-control text-bg-warning ">Under Review</span></td>
+                    <td><span class="form-control text-bg-warning" id="status_text">Under Review</span></td>
                     {% endif %}
                     {% if conference.status == conferenceStatus.TALK_SLOTS_ALLOCATED %}
-                    <td><span class="form-control text-bg-info ">Talking Slots Allocated</span></td>
+                    <td><span class="form-control text-bg-info" id="status_text">Talking Slots Allocated</span></td>
                     {% endif %}
                     {% if conference.status == conferenceStatus.CLOSED %}
-                    <td><span class="form-control text-bg-secondary ">Closed</span></td>
+                    <td><span class="form-control text-bg-secondary" id="status_text">Closed</span></td>
                     {% endif %}
                 </div>
 

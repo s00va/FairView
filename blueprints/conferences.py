@@ -179,7 +179,7 @@ def searchConferences():
         return redirect("/dashboard")
 
     return render_template(
-        "/display_pages/search_conferences.html",
+        "/display_pages/conferences.html",
         navbarLink=getNavbarLink(),
         invertedName=getInvertedName(),
         conferenceTable_data=getAllConferencesAndIfUserHasJoined(),
