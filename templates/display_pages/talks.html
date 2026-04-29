@@ -1,0 +1,17 @@
+{% extends 'subpages/base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block header %} {% endblock %}
+
+{% block body %}
+
+{% include 'subpages/navbar_speaker.html' %}
+
+<div class="container py-5">
+    {% include 'subpages/table_talks.html' %}
+</div>
+
+
+
+{% endblock %}

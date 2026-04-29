@@ -1,0 +1,49 @@
+{% extends 'subpages/table_generic.html' %}
+{% block tableTitle %}{{talkTable_title}}{% endblock %}
+{% block tableTopExtras %}
+{% if talkTable_buttonTitle %}
+<a href="{{talkTable_buttonLink}}" class="btn btn-outline-secondary btn-sm">
+    {{talkTable_buttonTitle}}
+</a>
+{%endif%}
+{% endblock %}
+
+
+{% block tableHeaders %}
+<th scope="col">Talk Title</th>
+<th scope="col">Conference Title</th>
+<th scope="col">Conference Date</th>
+<th scope="col">Submission Deadline</th>
+<th scope="col">Created</th>
+<th scope="col">Status</th>
+<th scope="col">Action</th>
+{% endblock %}
+
+{% block tableBody %}
+{% for row in talkTable_data %}
+<tr>
+    <td>{{row.talkTitle}}</td>
+    <td>{{row.conferenceTitle}}</td>
+    <td>{{row.conferenceDate.strftime('%Y-%m-%d')}}</td>
+    <td>{{row.submissionDeadline.strftime('%Y-%m-%d')}}</td>
+    <td>{{row.talkCreatedDate.strftime('%Y-%m-%d')}}</td>
+    {% if row.talkStatus == 'SUBMITTED' %}
+    <td><span class="badge text-bg-info ">Submitted</span></td>
+    {% endif %}
+    {% if row.talkStatus == 'UNDER_REVIEW' %}
+    <td><span class="badge text-bg-warning ">Under Review</span></td>
+    {% endif %}
+    {% if row.talkStatus == 'ACCEPTED' %}
+    <td><span class="badge text-bg-success ">Accepted</span></td>
+    {% endif %}
+    {% if row.talkStatus == 'REJECTED' %}
+    <td><span class="badge text-bg-danger ">Rejected</span></td>
+    {% endif %}
+    <td>
+        <a href="/view-feedback/TODO" class="text-decoration-none">
+            <i class="bi bi-arrow-right"></i>
+        </a>
+    </td>
+</tr>
+{%endfor%}
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'subpages/base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block header %} {% endblock %}
+
+{% block body %}
+
+{% include 'subpages/navbar_speaker.html' %}
+
+<div class="container py-5">
+    <div class="card shadow-sm">
+        <div class="card-body p-4 p-md-5">
+
+            <div class="mb-4">
+                <h5 class="card-title fw-semibold mb-1 display-5">Submit Talk</h5>
+                <p class="text-muted mb-0">Create a talk submission for an upcoming conference</p>
+            </div>
+
+            <div id="feedback_container" class="mb-3"></div>
+
+            <form class="row g-4" method="POST" action="/create-talk" hx-post="/create-talk"
+                hx-target="#feedback_container">
+
+                <div class="col-md-8">
+                    <label for="title_input" class="form-label">Talk Title</label>
+                    <input type="text" class="form-control" id="title_input" name="title_input"
+                        placeholder="e.g. Building Better AI Interfaces">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="conference_input" class="form-label">Conference</label>
+                    <select class="form-select" id="conference_input" name="conference_input">
+                        <option value="" selected disabled>Select conference</option>
+                        {% for conference in joinedConferences %}
+                        <option value="{{conference.id}}" {% if conference.id==defaultConferenceId %}selected{%endif%}>
+                            {{conference.title}}
+                        </option>
+                        {%endfor%}
+                    </select>
+                </div>
+
+                <div class="col-md-12">
+                    <label for="description_input" class="form-label">Talk Description</label>
+                    <textarea class="form-control" id="description_input" name="description_input" rows="5"
+                        placeholder="Describe what your talk is about..."></textarea>
+                </div>
+
+                <!--
+                TODO Submission date
+                <div class="col-md-4">
+                    <label for="submissionDate_input" class="form-label">Submission Date</label>
+                    <input type="date" class="form-control" id="submissionDate_input" name="submissionDate_input"
+                        disabled>
+                </div>
+                -->
+
+                <div class="col-12 d-flex justify-content-end pt-2">
+                    <button type="submit" class="btn btn-primary px-4">
+                        Create Talk
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

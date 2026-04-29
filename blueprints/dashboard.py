@@ -1,11 +1,7 @@
 from flask import Blueprint, render_template
-from blueprints.account import (
-    redirectToLoginIfNotLoggedIn,
-    getUserRole,
-    getInvertedName,
-)
-from blueprints.conferences import getJoinedConferences, getUserCreatedConferences
-from blueprints.enums import ConferenceStatus, Role
+from services.account import redirectToLoginIfNotLoggedIn, getUserRole, getInvertedName
+from services.conferences import getJoinedConferences, getUserCreatedConferences
+from services.enums import ConferenceStatus, Role
 
 dashboardBP = Blueprint(
     "dashboard", __name__, static_folder="../static", template_folder="../templates"
@@ -27,19 +23,19 @@ def dashboard():
         case Role.SPEAKER:
             speakerCards = [
                 DashboardCard(
-                    "createTalkTemp",
+                    "/create-talk",
                     "static/img/dashboard/new_talk_icon.png",
                     "Create New Talk",
                     "Submit a new talk to a conference",
                 ),
                 DashboardCard(
-                    "talks",
+                    "/talks",
                     "static/img/dashboard/view_talks_icon.png",
                     "Manage Talks",
                     "View and manage your existing talks",
                 ),
                 DashboardCard(
-                    "conferences",
+                    "/conferences",
                     "static/img/dashboard/join_conference_icon.png",
                     "Join Conference",
                     "Discover and join new conferences",
@@ -58,13 +54,13 @@ def dashboard():
         case Role.REVIEWER:
             reviewerCards = [
                 DashboardCard(
-                    "reviews",
+                    "/reviews",
                     "static/img/dashboard/view_talks_icon.png",
                     "Manage Reviews",
                     "View and manage your existing reviews",
                 ),
                 DashboardCard(
-                    "conferences",
+                    "/conferences",
                     "static/img/dashboard/join_conference_icon.png",
                     "Join Conference",
                     "Discover and join new conferences",
@@ -83,7 +79,7 @@ def dashboard():
         case Role.CONFERENCE_MANAGER:
             conferenceManagerCards = [
                 DashboardCard(
-                    "create-conference",
+                    "/create-conference",
                     "static/img/dashboard/new_talk_icon.png",
                     "Create New Conference",
                     "Create a new conference",
