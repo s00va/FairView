@@ -2,7 +2,7 @@ from flask_sqlalchemy_lite import SQLAlchemy
 from sqlalchemy import ForeignKey, Enum as SQLAlchemyEnum, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from datetime import datetime, UTC
-from blueprints.enums import Role, ConferenceStatus
+from services.enums import Role, ConferenceStatus
 
 db = SQLAlchemy()
 
@@ -56,6 +56,7 @@ class Conference(Base):
     joinedConference: Mapped[list["JoinedConference"]] = relationship(
         back_populates="conference"
     )
+    talks: Mapped[list["Talk"]] = relationship(back_populates="conference")
 
 
 class Talk(Base):
@@ -63,6 +64,9 @@ class Talk(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     speakerId: Mapped[int] = mapped_column(ForeignKey("user.id"), nullable=False)
+    conferenceId: Mapped[int] = mapped_column(
+        ForeignKey("conference.id"), nullable=False
+    )
     title: Mapped[str] = mapped_column(String(100), nullable=False)
     description: Mapped[str] = mapped_column(String(250), nullable=False)
     createdDate: Mapped[datetime] = mapped_column(default=lambda: datetime.now(UTC))
@@ -75,6 +79,7 @@ class Talk(Base):
     talkResult: Mapped["TalkResult"] = relationship(
         back_populates="talk", uselist=False
     )
+    conference: Mapped["Conference"] = relationship(back_populates="talks")
 
 
 class ReviewAllocation(Base):

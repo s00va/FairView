@@ -25,3 +25,10 @@ class ConferenceStatus(Enum):
     UNDER_REVIEW = 2
     TALK_SLOTS_ALLOCATED = 3
     CLOSED = 4
+
+
+class TalkStatus(Enum):
+    SUBMITTED = 1
+    UNDER_REVIEW = 2
+    ACCEPTED = 3
+    REJECTED = 4
