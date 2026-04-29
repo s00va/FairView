@@ -220,8 +220,8 @@ def manageConference(conferenceIdIn: str):
         if (
             db.session.scalar(
                 select(JoinedConference).where(
-                    JoinedConference.conferenceId == conferenceId
-                    and JoinedConference.userId == getLoggedInUserId()
+                    (JoinedConference.conferenceId == conferenceId)
+                    & (JoinedConference.userId == getLoggedInUserId())
                 )
             )
             is None

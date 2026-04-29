@@ -26,19 +26,19 @@ def dashboard():
     match role:
         case Role.SPEAKER:
             speakerCards = [
-                dashboardCard(
+                DashboardCard(
                     "createTalkTemp",
                     "static/img/dashboard/new_talk_icon.png",
                     "Create New Talk",
                     "Submit a new talk to a conference",
                 ),
-                dashboardCard(
+                DashboardCard(
                     "talks",
                     "static/img/dashboard/view_talks_icon.png",
                     "Manage Talks",
                     "View and manage your existing talks",
                 ),
-                dashboardCard(
+                DashboardCard(
                     "conferences",
                     "static/img/dashboard/join_conference_icon.png",
                     "Join Conference",
@@ -57,13 +57,13 @@ def dashboard():
             )
         case Role.REVIEWER:
             reviewerCards = [
-                dashboardCard(
+                DashboardCard(
                     "reviews",
                     "static/img/dashboard/view_talks_icon.png",
                     "Manage Reviews",
                     "View and manage your existing reviews",
                 ),
-                dashboardCard(
+                DashboardCard(
                     "conferences",
                     "static/img/dashboard/join_conference_icon.png",
                     "Join Conference",
@@ -82,7 +82,7 @@ def dashboard():
             )
         case Role.CONFERENCE_MANAGER:
             conferenceManagerCards = [
-                dashboardCard(
+                DashboardCard(
                     "create-conference",
                     "static/img/dashboard/new_talk_icon.png",
                     "Create New Conference",
@@ -105,7 +105,7 @@ def dashboard():
     return render_template("display_pages/error.html")
 
 
-class dashboardCard:
+class DashboardCard:
     """
     Containing information to display a single card on the dashboard.
     """

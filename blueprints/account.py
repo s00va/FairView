@@ -11,14 +11,21 @@ accountBP = Blueprint(
 ph = PasswordHasher()
 
 
-def getLoggedInUserId() -> str | None:
+def getLoggedInUserId() -> int | None:
     """
     Return the Id of the logged in User. This can be None if not defined
 
     Returns:
-        str | None: The logged in UserID or None.
+        int | None: The logged in UserID or None.
     """
-    return session["userId"]
+    userIdStr = session.get("userId", None)
+    if userIdStr is None:
+        return None
+    # Try and parse ID as integer to validate.
+    try:
+        return int(userIdStr)
+    except ValueError:
+        return None
 
 
 def validateUserLoggedIn() -> bool:
@@ -87,7 +94,7 @@ def redirectToDashIfLoggedIn(funcIn):
     @wraps(funcIn)
     def wrapper(*args, **kwargs):
         if validateUserLoggedIn():
-            return redirect("dashboard")
+            return redirect("/dashboard")
         return funcIn(*args, **kwargs)
 
     return wrapper
@@ -107,7 +114,7 @@ def redirectToLoginIfNotLoggedIn(funcIn):
     @wraps(funcIn)
     def wrapper(*args, **kwargs):
         if not validateUserLoggedIn():
-            return redirect("login")
+            return redirect("/login")
         return funcIn(*args, **kwargs)
 
     return wrapper
