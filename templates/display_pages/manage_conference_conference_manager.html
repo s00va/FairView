@@ -8,7 +8,7 @@
         <p class="text-muted small mb-3">Manage conference workflows and operations</p>
 
         <div class="card bg-white rounded-3 mb-3">
-            <div class="card-body d-flex align-items-center justify-content-between">
+            <form class="card-body d-flex align-items-center justify-content-between" action="" method="POST">
                 <div class="d-flex align-items-center gap-3">
                     <i class="bi bi-person fs-1"></i>
                     <div>
@@ -17,29 +17,30 @@
                             automatically</p>
                     </div>
                 </div>
-                <button type="button" class="btn btn-outline-secondary px-4" {% if
-                    conference.status!=conferenceStatus.OPEN %}disabled{%endif%} hx-post=""
-                    hx-vals='{"conferenceManagerAction": "allocateTalks"}'>
+                <button type="submit" class="btn btn-outline-secondary px-4" {% if
+                    conference.status!=conferenceStatus.OPEN %}disabled{%endif%} name="conferenceManagerAction"
+                    value="allocateTalks">
                     Allocate Talks
-                </button>
-            </div>
+                    </input>
+            </form>
         </div>
 
         <div class="card bg-white rounded-3">
-            <div class="card-body d-flex align-items-center justify-content-between">
+            <form class="card-body d-flex align-items-center justify-content-between" action="" method="POST">
                 <div class="d-flex align-items-center gap-3">
                     <i class="bi bi-bar-chart fs-1"></i>
                     <div>
                         <h5 class="mb-1">Generate Rankings & Feedback Reports</h5>
-                        <p class="text-muted mb-0">Prevent new talk submissions</p>
+                        <p class="text-muted mb-0">Closing reviews and generating a ranking of best talks. Allocating
+                            the highest rated talks speaking slots.</p>
                     </div>
                 </div>
-                <button type="button" class="btn btn-outline-secondary px-4" {% if
-                    conference.status!=conferenceStatus.UNDER_REVIEW %}disabled{%endif%} hx-post=""
-                    hx-vals='{"conferenceManagerAction": "generateRankings"}'>
+                <button type="submit" class="btn btn-outline-secondary px-4" {% if
+                    conference.status!=conferenceStatus.UNDER_REVIEW %}disabled{%endif%} name="conferenceManagerAction"
+                    value="generateRankings">
                     Generate Rankings
                 </button>
-            </div>
+            </form>
         </div>
     </div>
 </div>

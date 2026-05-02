@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, request, make_response
+from flask import Blueprint, render_template, redirect, request
 from services.database import db, Conference, JoinedConference
 from services.account import (
     redirectToLoginIfNotLoggedIn,
@@ -8,7 +8,12 @@ from services.account import (
     getInvertedName,
     getLoggedInUserId,
 )
-from services.conferences import getAllConferencesAndIfUserHasJoined, getConference
+from services.conferences import (
+    getAllConferencesAndIfUserHasJoined,
+    getConference,
+    allocateTalksToReviewers,
+    generateTalkRankings,
+)
 from services.enums import ConferenceStatus, Role
 from services.talks import getMyTalks
 from sqlalchemy import select
@@ -39,7 +44,7 @@ def createConference():
 
         # Ensure the description is at least 1 character long
         if len(description) < 1:
-            return "<p class='text-danger'>ERROR: Description must be at least 1 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Description must be at least 1 character long.</p>"
 
         # Attempt to convert conferenceDate into datetime format. This will fail if the passed string is incorrect or empty
         try:
@@ -139,36 +144,53 @@ def manageConference(conferenceIdIn: str):
     Returns:
         _type_: Renderable HTML.
     """
-    if request.method == "POST":
-        # Generate specific redirect to work with HTMX
-        response = make_response("", 204)
-        response.headers["HX-Redirect"] = "/dashboard"
 
+    # Attempt to convert conferenceIdIn into int
+    try:
+        conferenceId = int(conferenceIdIn)
+    except ValueError:
+        return redirect("/dashboard")
+
+    # Validate conferenceIdIn is a real conference
+    conference = getConference(conferenceId)
+
+    if conference is None:
+        return redirect("/dashboard")
+
+    if request.method == "POST":
         # Check if Conference Manager
         role = getUserRole()
         if role != Role.CONFERENCE_MANAGER:
-            return response
+            return redirect("/dashboard")
 
-        conferenceManagerAction = request.form.get("conferenceManagerAction")
+        # Checks logged in user manages conference
+        if conference.conferenceManagerId != getLoggedInUserId():
+            return redirect("/dashboard")
 
-        # TODO Get command
-        # TODO validate command is legal
-        # TODO execute command
+        conferenceManagerAction = request.form.get(
+            "conferenceManagerAction", ""
+        ).strip()
 
-        return response
+        # Validate action is real
+        if conferenceManagerAction not in ["allocateTalks", "generateRankings"]:
+            return redirect("/dashboard")
+
+        # Validate command is allowed to be executed & execute
+        if (
+            conferenceManagerAction == "allocateTalks"
+            and conference.status == ConferenceStatus.OPEN
+        ):
+            allocateTalksToReviewers(conferenceId)
+            return redirect(f"manage-conference/{conferenceId}")
+        elif (
+            conferenceManagerAction == "generateRankings"
+            and conference.status == ConferenceStatus.UNDER_REVIEW
+        ):
+            generateTalkRankings(conferenceId)
+            return redirect(f"manage-conference/{conferenceId}")
+
+        return redirect("/dashboard")
     else:
-        # Attempt to convert conferenceIdIn into int
-        try:
-            conferenceId = int(conferenceIdIn)
-        except ValueError:
-            return redirect("/dashboard")
-
-        # Validate conferenceIdIn is a real conference
-        conference = getConference(conferenceId)
-
-        if conference is None:
-            return redirect("/dashboard")
-
         # If the user is a speaker or reviewer, check if they have joined the conference. If not, join the conference.
         role = getUserRole()
         if role in [Role.SPEAKER, Role.REVIEWER]:
