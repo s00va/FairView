@@ -181,13 +181,17 @@ def manageConference(conferenceIdIn: str):
             and conference.status == ConferenceStatus.OPEN
         ):
             allocateTalksToReviewers(conferenceId)
-            return redirect(f"manage-conference/{conferenceId}")
+            conference.status = ConferenceStatus.UNDER_REVIEW
+            db.session.commit()
+            return redirect(f"/manage-conference/{conferenceId}")
         elif (
             conferenceManagerAction == "generateRankings"
             and conference.status == ConferenceStatus.UNDER_REVIEW
         ):
             generateTalkRankings(conferenceId)
-            return redirect(f"manage-conference/{conferenceId}")
+            conference.status = ConferenceStatus.TALK_SLOTS_ALLOCATED
+            db.session.commit()
+            return redirect(f"/manage-conference/{conferenceId}")
 
         return redirect("/dashboard")
     else:
