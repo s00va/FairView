@@ -50,7 +50,7 @@ def getMyTalks(conferenceIdIn: int | None = None):
             talkStatus,
         )
         .join(Conference, Talk.conferenceId == Conference.id)
-        .outerjoin(TalkResult, Talk.id == TalkResult.talkID)
+        .outerjoin(TalkResult, Talk.id == TalkResult.talkId)
         .where(Talk.speakerId == getLoggedInUserId())
     )
 
