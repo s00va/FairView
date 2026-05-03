@@ -1,0 +1,4002 @@
+[
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 3
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 3
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 3
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 2
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 3
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 3
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 3
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 3
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 10
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 9
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 10
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 10
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 10
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 2
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 10
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 1
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 3
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 2
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 3
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 2
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 3
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 2
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 3
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 3
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 3
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 3
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 3
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 3
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 2
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 3
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 3
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 3
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 3
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 2
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 3
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 3
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 3
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 3
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 3
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 2
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 2
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 3
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 2
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 3
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 10
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 10
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 10
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 10
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 3
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 9
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 3
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 3
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 3
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 1
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 3
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 3
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 2
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 4
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 2
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 8
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 9
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 4
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 10
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 5
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 8
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 5
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 8
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 3
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 2
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 10
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 6
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 10
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 6
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 10
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 1
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 7
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 7
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 3
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 6
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 5
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 7
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 5
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 7
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 10
+  },
+  {
+    "feedback": "The talk presents an interesting approach, but the motivation could be clearer. Some assumptions are not fully justified and would benefit from additional explanation.",
+    "score": 5
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 4
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 6
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 3
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 10
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 8
+  },
+  {
+    "feedback": "A solid contribution overall, though some parts feel rushed. Additional detail in the methodology would improve understanding.",
+    "score": 2
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 5
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 6
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 4
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 4
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 7
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "Interesting concept, but the evaluation is not entirely convincing. More rigorous validation or comparison to baselines is needed.",
+    "score": 9
+  },
+  {
+    "feedback": "The topic is relevant, but the depth is somewhat limited. Expanding on key concepts and providing more detailed examples would improve clarity.",
+    "score": 2
+  },
+  {
+    "feedback": "The work shows promise, but the narrative is difficult to follow in places. Clearer transitions and a stronger emphasis on the main contribution would help.",
+    "score": 10
+  },
+  {
+    "feedback": "Strong technical content with a clear structure. The ideas are well communicated, though a deeper comparison with existing work would strengthen the contribution.",
+    "score": 8
+  },
+  {
+    "feedback": "Good balance between theory and application. The examples are useful, though a discussion of limitations would make the talk more complete.",
+    "score": 9
+  },
+  {
+    "feedback": "Clear and engaging presentation with a strong central idea. Minor issues with repetition and structure could be improved.",
+    "score": 5
+  },
+  {
+    "feedback": "Very well explained with solid technical grounding. The presentation is engaging, though some sections could be streamlined for better pacing.",
+    "score": 7
+  },
+  {
+    "feedback": "Technically sound, but assumes a high level of prior knowledge. Adding more intuition would make it more accessible.",
+    "score": 9
+  }
+]

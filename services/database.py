@@ -68,7 +68,7 @@ class Talk(Base):
         ForeignKey("conference.id"), nullable=False
     )
     title: Mapped[str] = mapped_column(String(100), nullable=False)
-    description: Mapped[str] = mapped_column(String(250), nullable=False)
+    description: Mapped[str] = mapped_column(String(10000), nullable=False)
     createdDate: Mapped[datetime] = mapped_column(default=lambda: datetime.now(UTC))
     lastEdited: Mapped[datetime] = mapped_column(default=lambda: datetime.now(UTC))
 
@@ -86,7 +86,7 @@ class ReviewAllocation(Base):
     __tablename__ = "reviewAllocation"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    talkID: Mapped[int] = mapped_column(ForeignKey("talk.id"), nullable=False)
+    talkId: Mapped[int] = mapped_column(ForeignKey("talk.id"), nullable=False)
     reviewerId: Mapped[int] = mapped_column(ForeignKey("user.id"), nullable=False)
 
     talk: Mapped["Talk"] = relationship(back_populates="reviewAllocations")
@@ -100,7 +100,7 @@ class Review(Base):
     __tablename__ = "review"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    reviewAllocationID: Mapped[int] = mapped_column(
+    reviewAllocationId: Mapped[int] = mapped_column(
         ForeignKey("reviewAllocation.id"), unique=True, nullable=False
     )
     feedback: Mapped[str] = mapped_column(String(250), nullable=False)
@@ -115,7 +115,7 @@ class TalkResult(Base):
     __tablename__ = "talkResult"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    talkID: Mapped[int] = mapped_column(
+    talkId: Mapped[int] = mapped_column(
         ForeignKey("talk.id"), unique=True, nullable=False
     )
     rankPosition: Mapped[int] = mapped_column(nullable=False)
