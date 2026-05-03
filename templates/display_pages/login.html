@@ -14,11 +14,12 @@
             <form method="POST" action="/login" hx-post="/login" hx-target="#feedback_container">
                 <div class="mb-3">
                     <label for="email_input" class="form-label">Email</label>
-                    <input type="email" name="email_input" class="form-control" id="email_input">
+                    <input type="email" name="email_input" class="form-control" id="email_input" autocomplete="email">
                 </div>
                 <div class="mb-3">
                     <label for="password_input" class="form-label">Password</label>
-                    <input type="password" name="password_input" class="form-control" id="password_input">
+                    <input type="password" name="password_input" class="form-control" id="password_input"
+                        autocomplete="current-password">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Log In</button>

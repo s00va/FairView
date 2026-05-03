@@ -14,15 +14,17 @@
             <form method="POST" action="/sign-up" hx-post="/sign-up" hx-target="#feedback_container">
                 <div class="mb-3">
                     <label for="forename_input" class="form-label">Forename</label>
-                    <input type="text" name="forename_input" class="form-control" id="forename_input">
+                    <input type="text" name="forename_input" class="form-control" id="forename_input"
+                        autocomplete="given-name">
                 </div>
                 <div class="mb-3">
                     <label for="surname_input" class="form-label">Surname</label>
-                    <input type="text" name="surname_input" class="form-control" id="surname_input">
+                    <input type="text" name="surname_input" class="form-control" id="surname_input"
+                        autocomplete="family-name">
                 </div>
                 <div class="mb-3">
                     <label for="email_input" class="form-label">Email address</label>
-                    <input type="email" name="email_input" class="form-control" id="email_input"
+                    <input type="email" name="email_input" class="form-control" id="email_input" autocomplete="email"
                         aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Please ensure that your email is unique!</div>
                 </div>
@@ -32,7 +34,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="password_input" class="form-label">Password</label>
-                    <input type="password" name="password_input" class="form-control" id="password_input">
+                    <input type="password" name="password_input" class="form-control" id="password_input"
+                        autocomplete="new-password">
                 </div>
                 <div class="mb-3">
                     <label for="role_input" class="form-label">Role</label>
