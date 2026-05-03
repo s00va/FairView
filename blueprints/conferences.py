@@ -15,6 +15,7 @@ from services.conferences import (
     generateTalkRankings,
 )
 from services.enums import ConferenceStatus, Role
+from services.reviews import getMyReviews
 from services.talks import getMyTalks
 from sqlalchemy import select
 from datetime import datetime
@@ -161,11 +162,11 @@ def manageConference(conferenceIdIn: str):
         # Check if Conference Manager
         role = getUserRole()
         if role != Role.CONFERENCE_MANAGER:
-            return redirect("/dashboard")
+            return "<p class='text-danger'>ERROR: Trying to send a post request as a non Conference Manager.</p>"
 
         # Checks logged in user manages conference
         if conference.conferenceManagerId != getLoggedInUserId():
-            return redirect("/dashboard")
+            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
 
         conferenceManagerAction = request.form.get(
             "conferenceManagerAction", ""
@@ -173,27 +174,45 @@ def manageConference(conferenceIdIn: str):
 
         # Validate action is real
         if conferenceManagerAction not in ["allocateTalks", "generateRankings"]:
-            return redirect("/dashboard")
+            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
 
         # Validate command is allowed to be executed & execute
         if (
             conferenceManagerAction == "allocateTalks"
             and conference.status == ConferenceStatus.OPEN
         ):
-            allocateTalksToReviewers(conferenceId)
-            conference.status = ConferenceStatus.UNDER_REVIEW
-            db.session.commit()
-            return redirect(f"/manage-conference/{conferenceId}")
+            if allocateTalksToReviewers(conferenceId):
+                conference.status = ConferenceStatus.UNDER_REVIEW
+                db.session.commit()
+                return (
+                    "<p class='text-success'>SUCCESS: Allocated talks to reviewers. Reloading page...</p>"
+                    + render_template(
+                        "subpages/redirect_in_x_ms.html",
+                        url=f"/manage-conference/{conferenceId}",
+                        delay=500,
+                    )
+                )
+            else:
+                return "<p class='text-danger'>ERROR: Was unable to allocate reviews. Check if enough talks and reviewers are available.</p>"
         elif (
             conferenceManagerAction == "generateRankings"
             and conference.status == ConferenceStatus.UNDER_REVIEW
         ):
-            generateTalkRankings(conferenceId)
-            conference.status = ConferenceStatus.TALK_SLOTS_ALLOCATED
-            db.session.commit()
-            return redirect(f"/manage-conference/{conferenceId}")
+            if generateTalkRankings(conferenceId):
+                conference.status = ConferenceStatus.TALK_SLOTS_ALLOCATED
+                db.session.commit()
+                return (
+                    "<p class='text-success'>SUCCESS: Generated rankings of talks. Reloading page...</p>"
+                    + render_template(
+                        "subpages/redirect_in_x_ms.html",
+                        url=f"/manage-conference/{conferenceId}",
+                        delay=500,
+                    )
+                )
+            else:
+                return "<p class='text-danger'>ERROR: Was unable to generate rankings. Ensure all reviewers have completed reviews.</p>"
 
-        return redirect("/dashboard")
+        return "<p class='text-danger'>ERROR: Unexpected error. Perhaps refresh page."
     else:
         # If the user is a speaker or reviewer, check if they have joined the conference. If not, join the conference.
         role = getUserRole()
@@ -238,6 +257,8 @@ def manageConference(conferenceIdIn: str):
                     invertedName=getInvertedName(),
                     conference=conference,
                     conferenceStatus=ConferenceStatus,
+                    reviewTable_title="Talks To Review",
+                    reviewTable_data=getMyReviews(conferenceId),
                 )
             case Role.CONFERENCE_MANAGER:
                 return render_template(
