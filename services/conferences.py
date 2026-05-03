@@ -121,6 +121,9 @@ def allocateTalksToReviewers(conferenceIdIn: int) -> bool:
     # Create an array of talks to number of reviewers to allocate
     numOfReviewersNeededForEachTalk = [2] * numOfTalks
 
+    # Create an array of number of allocated talks for each reviewer
+    numOfAllocationsForEachReviewer = [0] * len(allReviewers)
+
     # For each reviewer find all the allowed talks (can't have the same affiliation)
     legalTalksForEachReviewer = []
     potentialTalkAllocations = 0
@@ -133,23 +136,24 @@ def allocateTalksToReviewers(conferenceIdIn: int) -> bool:
                 potentialTalkAllocations += 1
         legalTalksForEachReviewer.append(legalTalksForReviewer)
 
-    # Start allocating reviews from the least number of legal talks available
+    # Allocate by fewest current allocations, then by fewest legal talks available.
     allReviewAllocations = []
     while numOfAllocatedTalks != numOfTalks * 2 and potentialTalkAllocations != 0:
-        # Get a list of the reviewers with the least number of talks available
-        lenOfLeastLegalTalksAvailable = 9999
-        reviewersWithLeastLegalTalksAvailable = []
+        # Get a list of the reviewers with the number of allocated talks and the least number of talks available
+        # Prioritise fair number of allocated talks then number of least talks available
+        lowestScore = (9999, 9999)
+        reviewersWithLowestScores = []
         for dex, legalTalksForReviewer in enumerate(legalTalksForEachReviewer):
-            lenOfLegalTalksAvailable = len(legalTalksForReviewer)
-            if lenOfLegalTalksAvailable == 0:
+            score = (numOfAllocationsForEachReviewer[dex], len(legalTalksForReviewer))
+            if score[1] == 0:
                 continue
-            elif lenOfLegalTalksAvailable < lenOfLeastLegalTalksAvailable:
-                lenOfLeastLegalTalksAvailable = lenOfLegalTalksAvailable
-                reviewersWithLeastLegalTalksAvailable = [dex]
-            elif lenOfLegalTalksAvailable == lenOfLeastLegalTalksAvailable:
-                reviewersWithLeastLegalTalksAvailable.append(dex)
+            elif score < lowestScore:
+                lowestScore = score
+                reviewersWithLowestScores = [dex]
+            elif score == lowestScore:
+                reviewersWithLowestScores.append(dex)
         # Randomly pick a reviewer
-        reviewerDexToAllocateTalk = random.choice(reviewersWithLeastLegalTalksAvailable)
+        reviewerDexToAllocateTalk = random.choice(reviewersWithLowestScores)
         # Randomly pick talk
         talkDex = random.choice(legalTalksForEachReviewer[reviewerDexToAllocateTalk])
         # Allocate talk
@@ -159,6 +163,7 @@ def allocateTalksToReviewers(conferenceIdIn: int) -> bool:
                 reviewerId=allReviewers[reviewerDexToAllocateTalk].id,
             )
         )
+        numOfAllocationsForEachReviewer[reviewerDexToAllocateTalk] += 1
         # Remove talk from legal talks for specific reviewer
         legalTalksForEachReviewer[reviewerDexToAllocateTalk].remove(talkDex)
         potentialTalkAllocations -= 1
