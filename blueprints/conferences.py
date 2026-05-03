@@ -8,7 +8,12 @@ from services.account import (
     getInvertedName,
     getLoggedInUserId,
 )
-from services.conferences import getAllConferencesAndIfUserHasJoined, getConference
+from services.conferences import (
+    getAllConferencesAndIfUserHasJoined,
+    getConference,
+    allocateTalksToReviewers,
+    generateTalkRankings,
+)
 from services.enums import ConferenceStatus, Role
 from services.talks import getMyTalks
 from sqlalchemy import select
@@ -39,7 +44,7 @@ def createConference():
 
         # Ensure the description is at least 1 character long
         if len(description) < 1:
-            return "<p class='text-danger'>ERROR: Description must be at least 1 characters long.</p>"
+            return "<p class='text-danger'>ERROR: Description must be at least 1 character long.</p>"
 
         # Attempt to convert conferenceDate into datetime format. This will fail if the passed string is incorrect or empty
         try:
@@ -125,11 +130,12 @@ def searchConferences():
     )
 
 
-@conferenceBP.route("/manage-conference/<conferenceIdIn>", methods=["GET"])
+@conferenceBP.route("/manage-conference/<conferenceIdIn>", methods=["GET", "POST"])
 @redirectToLoginIfNotLoggedIn
 def manageConference(conferenceIdIn: str):
     """
-    Provide renderable HTML to manage actions for a specific conference.
+    POST: Receive conference manager action.
+    GET: Provide renderable HTML to manage actions for a specific conference.
     This includes viewing general details of a conference for all roles.
 
     Args:
@@ -138,6 +144,7 @@ def manageConference(conferenceIdIn: str):
     Returns:
         _type_: Renderable HTML.
     """
+
     # Attempt to convert conferenceIdIn into int
     try:
         conferenceId = int(conferenceIdIn)
@@ -150,56 +157,94 @@ def manageConference(conferenceIdIn: str):
     if conference is None:
         return redirect("/dashboard")
 
-    # If the user is a speaker or reviewer, check if they have joined the conference. If not, join the conference.
-    role = getUserRole()
-    if role in [Role.SPEAKER, Role.REVIEWER]:
+    if request.method == "POST":
+        # Check if Conference Manager
+        role = getUserRole()
+        if role != Role.CONFERENCE_MANAGER:
+            return redirect("/dashboard")
+
+        # Checks logged in user manages conference
+        if conference.conferenceManagerId != getLoggedInUserId():
+            return redirect("/dashboard")
+
+        conferenceManagerAction = request.form.get(
+            "conferenceManagerAction", ""
+        ).strip()
+
+        # Validate action is real
+        if conferenceManagerAction not in ["allocateTalks", "generateRankings"]:
+            return redirect("/dashboard")
+
+        # Validate command is allowed to be executed & execute
         if (
-            db.session.scalar(
-                select(JoinedConference).where(
-                    (JoinedConference.conferenceId == conferenceId)
-                    & (JoinedConference.userId == getLoggedInUserId())
-                )
-            )
-            is None
+            conferenceManagerAction == "allocateTalks"
+            and conference.status == ConferenceStatus.OPEN
         ):
-            # Join the conference
-            newJoinedConference = JoinedConference(
-                userId=getLoggedInUserId(), conferenceId=conferenceId
-            )
-            db.session.add(newJoinedConference)
+            allocateTalksToReviewers(conferenceId)
+            conference.status = ConferenceStatus.UNDER_REVIEW
             db.session.commit()
-            # Refresh page
-            return redirect(request.url)
+            return redirect(f"/manage-conference/{conferenceId}")
+        elif (
+            conferenceManagerAction == "generateRankings"
+            and conference.status == ConferenceStatus.UNDER_REVIEW
+        ):
+            generateTalkRankings(conferenceId)
+            conference.status = ConferenceStatus.TALK_SLOTS_ALLOCATED
+            db.session.commit()
+            return redirect(f"/manage-conference/{conferenceId}")
 
-            # return f"<h1>TESTING {conferenceIdIn}</h1>"
+        return redirect("/dashboard")
+    else:
+        # If the user is a speaker or reviewer, check if they have joined the conference. If not, join the conference.
+        role = getUserRole()
+        if role in [Role.SPEAKER, Role.REVIEWER]:
+            if (
+                db.session.scalar(
+                    select(JoinedConference).where(
+                        (JoinedConference.conferenceId == conferenceId)
+                        & (JoinedConference.userId == getLoggedInUserId())
+                    )
+                )
+                is None
+            ):
+                # Join the conference
+                newJoinedConference = JoinedConference(
+                    userId=getLoggedInUserId(), conferenceId=conferenceId
+                )
+                db.session.add(newJoinedConference)
+                db.session.commit()
+                # Refresh page
+                return redirect(request.url)
 
-    match role:
-        case Role.SPEAKER:
-            return render_template(
-                "/display_pages/manage_conference_speaker.html",
-                navbarLink=getNavbarLink(),
-                invertedName=getInvertedName(),
-                conference=conference,
-                conferenceStatus=ConferenceStatus,
-                talkTable_data=getMyTalks(conferenceId),
-                talkTable_title="My Talks",
-                talkTable_buttonTitle="+ New Talk",
-                talkTable_buttonLink=f"/create-talk/{conferenceId}",
-            )
-        case Role.REVIEWER:
-            return render_template(
-                "/display_pages/manage_conference_reviewer.html",
-                navbarLink=getNavbarLink(),
-                invertedName=getInvertedName(),
-                conference=conference,
-                conferenceStatus=ConferenceStatus,
-            )
-        case Role.CONFERENCE_MANAGER:
-            return render_template(
-                "/display_pages/manage_conference_conference_manager.html",
-                navbarLink=getNavbarLink(),
-                invertedName=getInvertedName(),
-                conference=conference,
-                conferenceStatus=ConferenceStatus,
-            )
-    return render_template("display_pages/error.html")
+                # return f"<h1>TESTING {conferenceIdIn}</h1>"
+
+        match role:
+            case Role.SPEAKER:
+                return render_template(
+                    "/display_pages/manage_conference_speaker.html",
+                    navbarLink=getNavbarLink(),
+                    invertedName=getInvertedName(),
+                    conference=conference,
+                    conferenceStatus=ConferenceStatus,
+                    talkTable_data=getMyTalks(conferenceId),
+                    talkTable_title="My Talks",
+                    talkTable_buttonTitle="+ New Talk",
+                    talkTable_buttonLink=f"/create-talk/{conferenceId}",
+                )
+            case Role.REVIEWER:
+                return render_template(
+                    "/display_pages/manage_conference_reviewer.html",
+                    navbarLink=getNavbarLink(),
+                    invertedName=getInvertedName(),
+                    conference=conference,
+                    conferenceStatus=ConferenceStatus,
+                )
+            case Role.CONFERENCE_MANAGER:
+                return render_template(
+                    "/display_pages/manage_conference_conference_manager.html",
+                    navbarLink=getNavbarLink(),
+                    invertedName=getInvertedName(),
+                    conference=conference,
+                    conferenceStatus=ConferenceStatus,
+                )
+        return render_template("display_pages/error.html")

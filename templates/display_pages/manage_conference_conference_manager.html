@@ -1,5 +1,47 @@
 {% extends 'subpages/manage_conference_generic.html' %}
 
 {% block manageConference %}
-<h1>Conference manager operations here. TODO</h1>
+
+<div class="card shadow-sm">
+    <div class="card-body p-4">
+        <h5 class="mb-1">Conference Actions</h5>
+        <p class="text-muted small mb-3">Manage conference workflows and operations</p>
+
+        <div class="card bg-white rounded-3 mb-3">
+            <form class="card-body d-flex align-items-center justify-content-between" action="" method="POST">
+                <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-person fs-1"></i>
+                    <div>
+                        <h5 class="mb-1">Close Submissions & Allocate Talks to Reviewers</h5>
+                        <p class="text-muted mb-0">Prevent new talk submissions & Assign talks for review
+                            automatically</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary px-4" {% if
+                    conference.status!=conferenceStatus.OPEN %}disabled{%endif%} name="conferenceManagerAction"
+                    value="allocateTalks">
+                    Allocate Talks
+                </button>
+            </form>
+        </div>
+
+        <div class="card bg-white rounded-3">
+            <form class="card-body d-flex align-items-center justify-content-between" action="" method="POST">
+                <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-bar-chart fs-1"></i>
+                    <div>
+                        <h5 class="mb-1">Generate Rankings & Feedback Reports</h5>
+                        <p class="text-muted mb-0">Closing reviews and generating a ranking of best talks. Allocating
+                            the highest rated talks speaking slots.</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary px-4" {% if
+                    conference.status!=conferenceStatus.UNDER_REVIEW %}disabled{%endif%} name="conferenceManagerAction"
+                    value="generateRankings">
+                    Generate Rankings
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
