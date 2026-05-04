@@ -15,7 +15,6 @@
             <h5 class="card-title fw-semibold">Conference Details</h5>
             <p class="text-muted small mb-4">Basic information about the conference</p>
 
-            <div id="feedback_container" class="mt-2"></div>
             <div class="row g-4">
 
                 <div class="col-md-8">
@@ -32,7 +31,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <label for="status_text" class="form-label">Status</label>
+                    <p class="form-label">Status</p>
                     {% if conference.status == conferenceStatus.OPEN %}
                     <td><span class="form-control text-bg-success" id="status_text">Open</span></td>
                     {% endif %}

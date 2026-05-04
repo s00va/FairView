@@ -187,5 +187,5 @@ def allocateTalksToReviewers(conferenceIdIn: int) -> bool:
 
 
 # TODO for another MR in the future.
-def generateTalkRankings(conferenceIdIn: int):
-    pass
+def generateTalkRankings(conferenceIdIn: int) -> bool:
+    return False

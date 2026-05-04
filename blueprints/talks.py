@@ -88,6 +88,7 @@ def createTalk(conferenceIdIn: str = ""):
         try:
             conferenceId = int(conferenceIdIn)
         except ValueError:
+            # Will assume no conference is selected by default
             conferenceId = -1
 
         return render_template(

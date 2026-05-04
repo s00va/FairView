@@ -5,6 +5,7 @@ from blueprints.account import accountBP
 from blueprints.dashboard import dashboardBP
 from blueprints.conferences import conferenceBP
 from blueprints.talks import talksBP
+from blueprints.reviews import reviewsBP
 
 
 app = Flask(__name__)
@@ -12,6 +13,7 @@ app.register_blueprint(accountBP, url_prefix="")
 app.register_blueprint(dashboardBP, url_prefix="")
 app.register_blueprint(conferenceBP, url_prefix="")
 app.register_blueprint(talksBP, url_prefix="")
+app.register_blueprint(reviewsBP, url_prefix="")
 app.config |= {
     "SQLALCHEMY_ENGINES": {
         "default": "sqlite:///default.sqlite",

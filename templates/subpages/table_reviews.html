@@ -1,0 +1,40 @@
+{% extends 'subpages/table_generic.html' %}
+{% block tableTitle %}{{reviewTable_title}}{% endblock %}
+
+{% block tableHeaders %}
+<th scope="col">Talk Title</th>
+<th scope="col">Conference Title</th>
+<th scope="col">Conference Date</th>
+<th scope="col">Conference Status</th>
+<th scope="col">Action</th>
+{% endblock %}
+
+{% block tableBody %}
+{% for row in reviewTable_data %}
+<tr>
+    <td>{{row.talkTitle}}</td>
+    <td>{{row.conferenceTitle}}</td>
+    <td>{{row.conferenceDate.strftime('%Y-%m-%d')}}</td>
+    {% if row.conferenceStatus == conferenceStatus.OPEN %}
+    <td><span class="badge text-bg-success ">Open</span></td>
+    {% endif %}
+    {% if row.conferenceStatus == conferenceStatus.UNDER_REVIEW %}
+    <td><span class="badge text-bg-warning ">Under Review</span></td>
+    {% endif %}
+    {% if row.conferenceStatus == conferenceStatus.TALK_SLOTS_ALLOCATED %}
+    <td><span class="badge text-bg-info ">Talking Slots Allocated</span></td>
+    {% endif %}
+    {% if row.conferenceStatus == conferenceStatus.CLOSED %}
+    <td><span class="badge text-bg-secondary ">Closed</span></td>
+    {% endif %}
+    <td>
+        {% if row.needsReviewing %}
+        <a href="/review-talk/{{row.allocationId}}" class="text-decoration-none">
+            Review
+            <i class="bi bi-arrow-right"></i>
+        </a>
+        {% endif %}
+    </td>
+</tr>
+{%endfor%}
+{% endblock %}
