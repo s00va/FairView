@@ -52,4 +52,5 @@ EXAMPLES:\
 - Speaker page to view details of talks.
 - Speaker should see if their talk was accepted/rejected on a tie. (Infrastructure exists already)
 - Search and filter capabilities for all tables.
+- Conference Manager can override which talks are accepted and rejected.
 
