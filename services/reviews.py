@@ -1,6 +1,6 @@
 from services.account import getLoggedInUserId
 from services.database import Conference, ReviewAllocation, Talk, Review, db
-from sqlalchemy import select, exists, not_, join
+from sqlalchemy import select, exists, not_
 
 
 def getMyReviews(conferenceIdIn: int | None = None):

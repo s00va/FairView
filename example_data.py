@@ -8,6 +8,8 @@ from services.database import (
     Conference,
     Talk,
     JoinedConference,
+    ReviewAllocation,
+    Review,
 )
 from services.enums import Role, ConferenceStatus
 from sqlalchemy import select
@@ -157,23 +159,95 @@ def joinUsersToConference(roleIn: Role, conferenceIdIn: int):
     db.session.add(newJoinedConference)
 
 
+def reviewTalks(conferenceIdIn: int):
+    """
+    Review all available talks in a specific conference.
+
+    Args:
+        conferenceIdIn (int): Target conference.
+    """
+    # Find all ReviewAllocations which have not been reviewed.
+    statement = (
+        select(ReviewAllocation)
+        .join(Talk, Talk.id == ReviewAllocation.talkId)
+        .outerjoin(Review, Review.reviewAllocationId == ReviewAllocation.id)
+        .where(Talk.conferenceId == conferenceIdIn, Review.id.is_(None))
+    )
+    reviewAllocationsToDo = db.session.execute(statement).scalars().all()
+
+    for reviewAllocation in reviewAllocationsToDo:
+        randomReview = random.choice(reviewsJson)
+        newReview = Review(
+            reviewAllocationId=reviewAllocation.id,
+            feedback=randomReview["feedback"],
+            score=randomReview["score"],
+        )
+        db.session.add(newReview)
+
+    print(f"Generated reviews for Conference={conferenceIdIn}")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate example data for a database")
 
-    parser.add_argument("--speakers", "-s", "-S", type=int)
-    parser.add_argument("--reviewers", "-r", "-R", type=int)
-    parser.add_argument("--conference_managers", "-cm", "-CM", type=int)
+    parser.add_argument(
+        "--speakers", "-s", "-S", type=int, help="Create n speaker users."
+    )
+    parser.add_argument(
+        "--reviewers", "-r", "-R", type=int, help="Create n reviewer users."
+    )
+    parser.add_argument(
+        "--conference_managers",
+        "-cm",
+        "-CM",
+        type=int,
+        help="Create n conference manager users.",
+    )
 
-    parser.add_argument("--conferences", "-c", "-C", type=int)
-    parser.add_argument("--talks", "-t", "-T", type=int)
-    parser.add_argument("--reviews", "-re", "-RE", type=int)
+    parser.add_argument(
+        "--conferences",
+        "-c",
+        "-C",
+        type=int,
+        help="Create n conferences over all conference managers.",
+    )
+    parser.add_argument(
+        "--talks",
+        "-t",
+        "-T",
+        type=int,
+        help="Create n talks from speakers which have joined specific conference.",
+    )
+    parser.add_argument(
+        "--review_talks",
+        "-rt",
+        "-RT",
+        action="store_true",
+        help="Review all available reviews on a specific conference.",
+    )
 
-    parser.add_argument("--join_speakers_to_conference", "-js", "-JS", type=int)
-    parser.add_argument("--join_reviewers_to_conference", "-jr", "-JR", type=int)
+    parser.add_argument(
+        "--join_speakers_to_conference",
+        "-js",
+        "-JS",
+        type=int,
+        help="Join n speakers to a specific conference.",
+    )
+    parser.add_argument(
+        "--join_reviewers_to_conference",
+        "-jr",
+        "-JR",
+        type=int,
+        help="Join n reviewers to a specific conference.",
+    )
 
-    # TODO for future MR, create reviews for specific conference.
-
-    parser.add_argument("--conference_id", "-cid", "-CID", type=int)
+    parser.add_argument(
+        "--conference_id",
+        "-cid",
+        "-CID",
+        type=int,
+        help="Specify the conference ID.",
+    )
 
     args = parser.parse_args()
 
@@ -252,4 +326,14 @@ if __name__ == "__main__":
                 for _ in range(args.join_reviewers_to_conference):
                     joinUsersToConference(Role.REVIEWER, args.conference_id)
 
+        # Review all remaining talks
+        if args.review_talks:
+            if args.conference_id is None:
+                print(
+                    "ERROR: No conference ID specified for reviewing all remaining talks."
+                )
+            else:
+                reviewTalks(args.conference_id)
+
+        # Update database
         db.session.commit()
