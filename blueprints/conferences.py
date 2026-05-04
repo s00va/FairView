@@ -151,13 +151,13 @@ def manageConference(conferenceIdIn: str):
         try:
             conferenceId = int(conferenceIdIn)
         except ValueError:
-            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
 
         # Validate conferenceIdIn is a real conference
         conference = getConference(conferenceId)
 
         if conference is None:
-            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
 
         # Check if Conference Manager
         role = getUserRole()
@@ -166,7 +166,7 @@ def manageConference(conferenceIdIn: str):
 
         # Checks logged in user manages conference
         if conference.conferenceManagerId != getLoggedInUserId():
-            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
 
         conferenceManagerAction = request.form.get(
             "conferenceManagerAction", ""
@@ -174,7 +174,7 @@ def manageConference(conferenceIdIn: str):
 
         # Validate action is real
         if conferenceManagerAction not in ["allocateTalks", "generateRankings"]:
-            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
 
         # Validate command is allowed to be executed & execute
         if (
@@ -212,7 +212,9 @@ def manageConference(conferenceIdIn: str):
             else:
                 return "<p class='text-danger'>ERROR: Was unable to generate rankings. Ensure all reviewers have completed reviews.</p>"
 
-        return "<p class='text-danger'>ERROR: Unexpected error. Perhaps refresh page."
+        return (
+            "<p class='text-danger'>ERROR: Unexpected error. Perhaps refresh page.</p>"
+        )
     else:
         # Attempt to convert conferenceIdIn into int
         try:
