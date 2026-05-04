@@ -6,9 +6,11 @@ from services.database import (
     Talk,
     User,
     ReviewAllocation,
+    Review,
+    TalkResult,
 )
 from services.enums import Role
-from sqlalchemy import select
+from sqlalchemy import select, func, desc
 import random
 
 
@@ -107,6 +109,11 @@ def allocateTalksToReviewers(conferenceIdIn: int) -> bool:
         & (User.role == Role.REVIEWER),
     )
     allTalksAndAffiliation = db.session.execute(allTalksStatement).all()
+
+    # If there are no talks, don't allocate
+    if len(allTalksAndAffiliation) == 0:
+        return False
+
     allTalks = []
     allTalkAffiliations = []
     for talk, affiliation in allTalksAndAffiliation:
@@ -114,6 +121,10 @@ def allocateTalksToReviewers(conferenceIdIn: int) -> bool:
         allTalkAffiliations.append(affiliation.strip().lower())
 
     allReviewers = db.session.execute(allReviewersStatement).scalars().all()
+
+    # If there are no reviewers, don't allocate
+    if len(allReviewers) == 0:
+        return False
 
     numOfTalks = len(allTalks)
     numOfAllocatedTalks = 0
@@ -186,6 +197,71 @@ def allocateTalksToReviewers(conferenceIdIn: int) -> bool:
     return False
 
 
-# TODO for another MR in the future.
 def generateTalkRankings(conferenceIdIn: int) -> bool:
-    return False
+    """
+    Validates all reviews have been completed.
+    Then sums up the scores for each talk and orders from highest to lowest.
+    The highest scores fill up the conference slots.
+
+    Args:
+        conferenceIdIn (int): The specific conference.
+
+    Returns:
+        bool: Flag describing whether generate Talk Rankings was successful.
+    """
+    # Get the conference in mention. Check it is valid.
+    conference = getConference(conferenceIdIn)
+    if conference is None:
+        return False
+
+    # Check all reviews are met by checking if there are any null outer joins
+    statement = (
+        select(ReviewAllocation)
+        .join(Talk, Talk.id == ReviewAllocation.talkId)
+        .outerjoin(Review, Review.reviewAllocationId == ReviewAllocation.id)
+        .where(Talk.conferenceId == conferenceIdIn, Review.id.is_(None))
+        .limit(1)
+    )
+    # If the result is None, all reviews have been made
+    if db.session.execute(statement).first() is not None:
+        return False
+
+    # Get talk id average of both scores, rank from highest to lowest score, if the same score, order randomly
+    averageScore = func.avg(Review.score)
+    statement = (
+        select(Talk.id.label("id"), averageScore.label("averageScore"))
+        .join(ReviewAllocation, ReviewAllocation.talkId == Talk.id)
+        .join(Review, Review.reviewAllocationId == ReviewAllocation.id)
+        .where(Talk.conferenceId == conferenceIdIn)
+        .group_by(Talk.id)
+        .order_by(desc(averageScore), func.random())
+    )
+    allTalksAndScores = db.session.execute(statement).all()
+
+    # Get number of available slots
+    slots = conference.talkSlots
+
+    # Check if there is any tie break
+    allTieBreakTalkIds = []
+    if slots < len(allTalksAndScores):
+        boundaryScore = allTalksAndScores[slots - 1].averageScore
+        nextScore = allTalksAndScores[slots].averageScore
+
+        if boundaryScore == nextScore:
+            for talkAndScore in allTalksAndScores:
+                if talkAndScore.averageScore == nextScore:
+                    allTieBreakTalkIds.append(talkAndScore.id)
+
+    # Create TalkResults
+    for rank, talkAndScore in enumerate(allTalksAndScores):
+        db.session.add(
+            TalkResult(
+                talkId=talkAndScore.id,
+                rankPosition=rank + 1,
+                selected=rank < slots,
+                isTieBreakApplied=talkAndScore.id in allTieBreakTalkIds,
+            )
+        )
+
+    db.session.commit()
+    return True

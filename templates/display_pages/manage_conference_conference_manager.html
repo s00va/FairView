@@ -28,7 +28,7 @@
             </form>
         </div>
 
-        <div class="card bg-white rounded-3">
+        <div class="card bg-white rounded-3 mb-3">
             <form class="card-body d-flex align-items-center justify-content-between" action="" method="POST" hx-post=""
                 hx-target="#feedback_container">
                 <div class="d-flex align-items-center gap-3">
@@ -43,6 +43,25 @@
                     conference.status!=conferenceStatus.UNDER_REVIEW %}disabled{%endif%} name="conferenceManagerAction"
                     value="generateRankings">
                     Generate Rankings
+                </button>
+            </form>
+        </div>
+
+
+        <div class="card bg-white rounded-3">
+            <form method="GET" class="card-body d-flex align-items-center justify-content-between"
+                action="/conference-talk-results/{{conference.id}}">
+                <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-bar-chart fs-1"></i>
+                    <div>
+                        <h5 class="mb-1">View Talk Results</h5>
+                        <p class="text-muted mb-0">View a table of all talks. Ordered from highest score to least.
+                            Showing which talks have been accepted and rejected.</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary px-4" {% if
+                    conference.status!=conferenceStatus.TALK_SLOTS_ALLOCATED %} disabled {% endif %}>
+                    VIEW SELECTED TALKS
                 </button>
             </form>
         </div>

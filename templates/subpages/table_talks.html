@@ -40,9 +40,12 @@
     <td><span class="badge text-bg-danger ">Rejected</span></td>
     {% endif %}
     <td>
-        <a href="/view-feedback/TODO" class="text-decoration-none">
+        {% if row.talkStatus == 'ACCEPTED' or row.talkStatus == 'REJECTED' %}
+        <a href="/view-feedback/{{row.id}}" class="text-decoration-none">
+            View Feedback
             <i class="bi bi-arrow-right"></i>
         </a>
+        {% endif %}
     </td>
 </tr>
 {%endfor%}

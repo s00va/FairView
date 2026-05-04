@@ -6,7 +6,14 @@ from services.account import (
     getUserRole,
 )
 from services.conferences import getJoinedConferences
-from services.database import db, Conference, JoinedConference, Talk
+from services.database import (
+    db,
+    Conference,
+    JoinedConference,
+    Talk,
+    Review,
+    ReviewAllocation,
+)
 from services.enums import Role
 from services.generic_methods import getWordCount
 from services.talks import getMyTalks
@@ -121,4 +128,61 @@ def searchTalks():
         talkTable_title="My Talks",
         talkTable_buttonTitle="+ New Talk",
         talkTable_buttonLink="/create-talk",
+    )
+
+
+@talksBP.route("/view-feedback/<talkIdIn>", methods=["GET"])
+@redirectToLoginIfNotLoggedIn
+def viewFeedback(talkIdIn: str):
+    """
+    Generate HTML to display details on a specific talk and both feedbacks.
+
+    Args:
+        talkIdIn (str): The specific talk.
+
+    """
+    # Get user role
+    role = getUserRole()
+    # Redirect to dashboard if not Speaker
+    if role != Role.SPEAKER:
+        return redirect("/dashboard")
+
+    # Try and convert talkIdIn into in
+    try:
+        talkId = int(talkIdIn)
+    except ValueError:
+        return redirect("/dashboard")
+
+    # Get talk details. validate user is speaker for talk.
+    statement = (
+        select(
+            Talk.title.label("talkTitle"),
+            Talk.description.label("talkDescription"),
+            Conference.title.label("conference"),
+        )
+        .join(Conference, Conference.id == Talk.conferenceId)
+        .where(Talk.id == talkId, Talk.speakerId == getLoggedInUserId())
+    )
+    talk = db.session.execute(statement).first()
+
+    if talk is None:
+        return redirect("/dashboard")
+
+    # Get both feedbacks
+    statement = (
+        select(Review.feedback)
+        .join(ReviewAllocation, ReviewAllocation.id == Review.reviewAllocationId)
+        .where(ReviewAllocation.talkId == talkId)
+    )
+    # For this prototype assume always 2 feedbacks
+    feedbacks = db.session.execute(statement).scalars().all()
+
+    return render_template(
+        "/display_pages/feedback.html",
+        invertedName=getInvertedName(),
+        talkTitle=talk.talkTitle,
+        conference=talk.conference,
+        talkDescription=talk.talkDescription,
+        feedback1=feedbacks[0],
+        feedback2=feedbacks[1],
     )

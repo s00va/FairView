@@ -1,27 +1,19 @@
 from flask import Blueprint, render_template, request, redirect
 from services.account import (
-    getLoggedInUserId,
     getInvertedName,
     redirectToLoginIfNotLoggedIn,
     getUserRole,
 )
-from services.conferences import getJoinedConferences
 from services.database import (
     db,
-    Conference,
-    JoinedConference,
-    Talk,
-    ReviewAllocation,
     Review,
 )
 from services.enums import Role, ConferenceStatus
-from services.generic_methods import getWordCount
 from services.reviews import (
     getMyReviews,
     getTalkTitleDescriptionAndConferenceFromReviewAllocation,
     canUserReview,
 )
-from sqlalchemy import select
 
 reviewsBP = Blueprint(
     "reviews", __name__, static_folder="../static", template_folder="../templates"

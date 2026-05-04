@@ -16,7 +16,7 @@ from services.conferences import (
 )
 from services.enums import ConferenceStatus, Role
 from services.reviews import getMyReviews
-from services.talks import getMyTalks
+from services.talks import getMyTalks, getAllTalksInConference
 from sqlalchemy import select
 from datetime import datetime
 
@@ -146,19 +146,19 @@ def manageConference(conferenceIdIn: str):
         _type_: Renderable HTML.
     """
 
-    # Attempt to convert conferenceIdIn into int
-    try:
-        conferenceId = int(conferenceIdIn)
-    except ValueError:
-        return redirect("/dashboard")
-
-    # Validate conferenceIdIn is a real conference
-    conference = getConference(conferenceId)
-
-    if conference is None:
-        return redirect("/dashboard")
-
     if request.method == "POST":
+        # Attempt to convert conferenceIdIn into int
+        try:
+            conferenceId = int(conferenceIdIn)
+        except ValueError:
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
+
+        # Validate conferenceIdIn is a real conference
+        conference = getConference(conferenceId)
+
+        if conference is None:
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
+
         # Check if Conference Manager
         role = getUserRole()
         if role != Role.CONFERENCE_MANAGER:
@@ -166,7 +166,7 @@ def manageConference(conferenceIdIn: str):
 
         # Checks logged in user manages conference
         if conference.conferenceManagerId != getLoggedInUserId():
-            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
 
         conferenceManagerAction = request.form.get(
             "conferenceManagerAction", ""
@@ -174,7 +174,7 @@ def manageConference(conferenceIdIn: str):
 
         # Validate action is real
         if conferenceManagerAction not in ["allocateTalks", "generateRankings"]:
-            return "<p class='text-danger'>ERROR: Someone is trying to do something malicious...</p>"
+            return "<p class='text-danger'>ERROR: Something went wrong. Please refresh page!</p>"
 
         # Validate command is allowed to be executed & execute
         if (
@@ -212,8 +212,22 @@ def manageConference(conferenceIdIn: str):
             else:
                 return "<p class='text-danger'>ERROR: Was unable to generate rankings. Ensure all reviewers have completed reviews.</p>"
 
-        return "<p class='text-danger'>ERROR: Unexpected error. Perhaps refresh page."
+        return (
+            "<p class='text-danger'>ERROR: Unexpected error. Perhaps refresh page.</p>"
+        )
     else:
+        # Attempt to convert conferenceIdIn into int
+        try:
+            conferenceId = int(conferenceIdIn)
+        except ValueError:
+            return redirect("/dashboard")
+
+        # Validate conferenceIdIn is a real conference
+        conference = getConference(conferenceId)
+
+        if conference is None:
+            return redirect("/dashboard")
+
         # If the user is a speaker or reviewer, check if they have joined the conference. If not, join the conference.
         role = getUserRole()
         if role in [Role.SPEAKER, Role.REVIEWER]:
@@ -261,6 +275,10 @@ def manageConference(conferenceIdIn: str):
                     reviewTable_data=getMyReviews(conferenceId),
                 )
             case Role.CONFERENCE_MANAGER:
+                # Check logged in user owns conference
+                if conference.conferenceManagerId != getLoggedInUserId():
+                    return redirect("/dashboard")
+
                 return render_template(
                     "/display_pages/manage_conference_conference_manager.html",
                     navbarLink=getNavbarLink(),
@@ -269,3 +287,46 @@ def manageConference(conferenceIdIn: str):
                     conferenceStatus=ConferenceStatus,
                 )
         return render_template("display_pages/error.html")
+
+
+@conferenceBP.route("/conference-talk-results/<conferenceIdIn>", methods=["GET"])
+@redirectToLoginIfNotLoggedIn
+def conferenceResults(conferenceIdIn: int):
+    """
+    Generate HTML of page displaying every talk submission for a specific conference.
+    Providing information about the talk, speaker and whether it was accepted/rejected.
+
+    Args:
+        conferenceIdIn (int): The target conference.
+    """
+    # Get user role
+    role = getUserRole()
+    # Redirect to dashboard if not Conference Manager
+    if role != Role.CONFERENCE_MANAGER:
+        return redirect("/dashboard")
+
+    # Attempt to convert conferenceIdIn into int
+    try:
+        conferenceId = int(conferenceIdIn)
+    except ValueError:
+        return redirect("/dashboard")
+
+    # Validate conferenceIdIn is a real conference
+    conference = getConference(conferenceId)
+
+    if conference is None:
+        return redirect("/dashboard")
+
+    # Validate logged in user owns conference
+    if conference.conferenceManagerId != getLoggedInUserId():
+        return redirect("/dashboard")
+
+    return render_template(
+        "/display_pages/conference_talk_results.html",
+        navbarLink=getNavbarLink(),
+        invertedName=getInvertedName(),
+        conference=conference,
+        conferenceStatus=ConferenceStatus,
+        talkTable_title="All Talks",
+        talkTable_data=getAllTalksInConference(conferenceId),
+    )
